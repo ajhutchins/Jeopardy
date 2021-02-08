@@ -10,13 +10,19 @@ body {
     /* transform: translate(-50%, -50%); */
     font-family:'Big Shoulders Display', Courier;
 }
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:750px;
+}
+
 h1 {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 2px black;
-    font-size: 40px;
+    font-size: 45px;
     border-radius: 3px;
-    padding: 25px 10px 0 10px;
 }
 
 .wholeGame {
@@ -25,6 +31,7 @@ h1 {
     /* position: absolute; */
     background-color: darkblue;
     border-radius: 3px;
+    border: 2px solid gold;
 }
 
 .categories {
@@ -35,7 +42,7 @@ h1 {
     justify-content: space-between;
     color: white;
     text-shadow: 2px 2px 2px black;
-    border: 1px solid gold;
+    border: 2px solid gold;
     /* flex: space-between; */
     padding: 25px;
     /* margin: 0 auto; */
@@ -44,7 +51,7 @@ h1 {
 }
 
 #category1, #category2, #category3, #category4, #category5 {
-    border: 1px solid black;
+    border: 2px solid black;
     width: 100%;
     height: 50px;
     padding: 25px 25px 25px 25px;
@@ -54,14 +61,14 @@ h1 {
 
 #column1, #column2, #column3, #column4, #column5 {
     height: 400px;
-    width: 100px;
+    width: 105px;
     flex-basis: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
     text-shadow: 2px 2px 2px black;
-    border: 1px solid black;
+    border: 2px solid gold;
     flex-direction: column;
     padding: 15px 20px 5px 20px;
     float: left;
@@ -73,36 +80,11 @@ h1 {
 
 #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #question12, #question13, #question14, #question15, #question16, #question17, #question18, #question19, #question20, #question21, #question22, #question23, #question24, #question25 {
     border: 1px solid black;
-    /* height: 200px;
-    width: 225px; */
-    padding: 6px;
-    z-index: 1;
-    /* overflow: auto; */
+
     display: none;
 }
 
-/* .question-back {
-    background: darkblue;
-    border: 1px solid rgb(255, 255, 255);
-    height: 200px;
-    width: 225px;
-    padding: 6px;
-    z-index: 1; */
-    /* overflow: auto; */
-    /* content: hide; */
-    /* display: none; 
-}*/
-
-  #question-textbox1, #question-textbox2, #question-textbox3, #question-textbox4, #question-textbox5, #question-textbox6, #question-textbox7, #question-textbox8, #question-textbox9, #question-textbox10, #question-textbox11, #question-textbox12, #question-textbox13, #question-textbox14, #question-textbox15, #question-textbox16, #question-textbox17, #question-textbox18, #question-textbox19, #question-textbox20, #question-textbox21, #question-textbox22, #question-textbox23, #question-textbox24, #question-textbox25 {
-	/* background-color: rgb(65, 160, 192);
-	height: 250px;
-	width: 350px;
-	border-radius: 2px; */
-	/* margin: 150px auto; */
-    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 2%;
-    line-height: 120%; */
+#question-textbox1, #question-textbox2, #question-textbox3, #question-textbox4, #question-textbox5, #question-textbox6, #question-textbox7, #question-textbox8, #question-textbox9, #question-textbox10, #question-textbox11, #question-textbox12, #question-textbox13, #question-textbox14, #question-textbox15, #question-textbox16, #question-textbox17, #question-textbox18, #question-textbox19, #question-textbox20, #question-textbox21, #question-textbox22, #question-textbox23, #question-textbox24, #question-textbox25 {
     padding: 14px 18px;
 	background-color:darkblue;
 	border: 1px solid gold;
@@ -122,7 +104,7 @@ h1 {
 	background-color:darkblue;
 	border: 1px solid gold;
 	outline: none;
-	border-radius: 3px;
+	border-radius: 4px;
     color: white;
     font-size: 18px;
     cursor: pointer;
