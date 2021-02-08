@@ -99,16 +99,16 @@ $(() => {
 
 
     const openAnswer1 = () => {
-        $button1A.css('display', 'block');
+        $buttonA1.css('display', 'block');
     }
     const openAnswer2 = () => {
-        $button1B.css('display', 'block');
+        $buttonB1.css('display', 'block');
     }
     const openAnswer3 = () => {
-        $button1C.css('display', 'block');
+        $buttonC1.css('display', 'block');
     }
     const openAnswer4 = () => {
-        $button1D.css('display', 'block');
+        $buttonD1.css('display', 'block');
     }
     // const openAnswer5 = () => {
     //     $modal5.css('display', 'block');
@@ -228,17 +228,33 @@ $(() => {
     const $modal24 = $('#question24');
     const $modal25 = $('#question25');
     
-    const $button1A = $('#A1Answer');
-    const $button1B = $('#B1Answer');
-    const $button1C = $('#C1Answer');
-    const $button1D = $('#D1Answer');
 
-    // these are the event listeners for opening each modal
+    // these are the event listeners for each answer for all questions
+    const $buttonA1 = $('#A1Answer');
+    const $buttonB1 = $('#B1Answer');
+    const $buttonC1 = $('#C1Answer');
+    const $buttonD1 = $('#D1Answer');
+    const $buttonA2 = $('#A2Answer');
+    const $buttonB2 = $('#B2Answer');
+    const $buttonA3 = $('#A3Answer');
+    const $buttonB3 = $('#B3Answer');
+    const $buttonC3 = $('#C3Answer');
+    const $buttonD3 = $('#D3Answer');
+    const $buttonA4 = $('#A4Answer');
+    const $buttonB4 = $('#B4Answer');
+    const $buttonC4 = $('#C4Answer');
+    const $buttonD4 = $('#D4Answer');
+    const $buttonA5 = $('#A5Answer');
+    const $buttonB5 = $('#B5Answer');
+    const $buttonC5 = $('#C5Answer');
+    const $buttonD5 = $('#D5Answer');
+    const $buttonA6 = $('#A6Answer');
+    const $buttonB6 = $('#B6Answer');
+    const $buttonC6 = $('#C6Answer');
+    const $buttonD6 = $('#D6Answer');
+
+    // these are the event listeners for opening each question modal
     $openButton1.on('click', openQuestion1);
-    $button1A.on('click', openAnswer1);
-    $button1B.on('click', openAnswer2);
-    $button1C.on('click', openAnswer3);
-    $button1D.on('click', openAnswer4);
     $openButton2.on('click', openQuestion2);
     $openButton3.on('click', openQuestion3);
     $openButton4.on('click', openQuestion4);
@@ -263,6 +279,12 @@ $(() => {
     $openButton23.on('click', openQuestion23);
     $openButton24.on('click', openQuestion24);
     $openButton25.on('click', openQuestion25);
+
+    // these are the event listeners for each answer button
+    $buttonA1.on('click', openAnswer1);
+    $buttonB1.on('click', openAnswer2);
+    $buttonC1.on('click', openAnswer3);
+    $buttonD1.on('click', openAnswer4);
 
 
 

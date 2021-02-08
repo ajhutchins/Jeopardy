@@ -62,7 +62,7 @@ h1 {
 
 #column1, #column2, #column3, #column4, #column5 {
     height: 400px;
-    width: 105px;
+    width: 106px;
     flex-basis: 30%;
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@ h1 {
 	border-radius: 3px;
     color: white;
     font-size: 24px;
-    cursor: pointer;
+    /* cursor: pointer; */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -116,7 +116,7 @@ h1 {
 }
 
 
-#A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer {
+#A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer, #A3Answer, #B3Answer, #C3Answer, #D3Answer, #A4Answer, #B4Answer, #C4Answer, #D4Answer, #A5Answer, #B5Answer, #C5Answer, #D5Answer  {
     border: 1px solid black;
     height: 200px;
     width: 225px;
@@ -124,13 +124,13 @@ h1 {
     z-index: 1;
     /* overflow: auto; */
     display: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     left: 50%;
     top: 50%;
     /* position: absolute; */
 }
 
-#A1, #B1, #C1, #D1, #A2, #B2 {
+#A1, #B1, #C1, #D1, #A2, #B2, #A3, #B3, #C3, #D3, #A4, #B4, #C4, #D4, #A5, #B5, #C5, #D5, #A6, #B6, #C6, #D6 {
     cursor: pointer;
     background-color:rgb(74, 74, 189);
 	border: 1px solid gold;
