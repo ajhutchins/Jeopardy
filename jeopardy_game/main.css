@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
 body {
     background: blue;
     /* justify-content: center; */
     margin: 0 auto;
+    font-family:'Big Shoulders Display', Courier;
 }
 h1 {
     text-align: center;
@@ -17,21 +20,27 @@ h1 {
 }
 
 .categories {
-    height: 85px;
-    flex-basis: 23%;
+    height: 50px;
+    flex-basis: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
     text-shadow: 2px 2px 2px black;
     border: 1px solid black;
-    flex: space-between;
+    /* flex: space-between; */
     padding: 25px;
+    /* margin: 0 auto; */
+    font-size:30px;
 }
 
+/* #category1, #category2, #category3, #category4, #category5 {
+    border: 1px solid black;
+} */
+
 #column1, #column2, #column3, #column4, #column5 {
-    height: 700px;
-    width: 18%;
+    height: 400px;
+    width: 14%;
     flex-basis: 30%;
     display: flex;
     align-items: center;
@@ -42,12 +51,62 @@ h1 {
     flex-direction: column;
     padding: 15px 20px 5px 20px;
     float: left;
-    overflow: hidden;
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
 }
 
-#question1, #question2, #question3, #question4, #question5 {
+#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #question12, #question13, #question14, #question15, #question16, #question17, #question18, #question19, #question20, #question21, #question22, #question23, #question24, #question25 {
     border: 1px solid black;
+    /* height: 200px;
+    width: 225px; */
+    padding: 6px;
+    z-index: 1;
+    /* overflow: auto; */
+    display: none;
+}
+
+/* .question-back {
+    background: darkblue;
+    border: 1px solid rgb(255, 255, 255);
     height: 200px;
     width: 225px;
     padding: 6px;
+    z-index: 1; */
+    /* overflow: auto; */
+    /* content: hide; */
+    /* display: none; 
+}*/
+
+  #question-textbox1, #question-textbox2, #question-textbox3, #question-textbox4, #question-textbox5, #question-textbox6, #question-textbox7, #question-textbox8, #question-textbox9, #question-textbox10, #question-textbox11, #question-textbox12, #question-textbox13, #question-textbox14, #question-textbox15, #question-textbox16, #question-textbox17, #question-textbox18, #question-textbox19, #question-textbox20, #question-textbox21, #question-textbox22, #question-textbox23, #question-textbox24, #question-textbox25 {
+	/* background-color: rgb(65, 160, 192);
+	height: 250px;
+	width: 350px;
+	border-radius: 2px; */
+	/* margin: 150px auto; */
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 2%;
+    line-height: 120%; */
+    padding: 14px 18px;
+	background-color:darkblue;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#A1Answer, #B1Answer, #C1Answer, #D1Answer {
+    border: 1px solid black;
+    /* height: 200px;
+    width: 225px; */
+    padding: 6px;
+    z-index: 1;
+    /* overflow: auto; */
+    display: none;
 }
