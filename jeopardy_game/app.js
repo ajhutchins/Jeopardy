@@ -98,18 +98,18 @@ $(() => {
     }
 
 
-    // const openAnswer1 = () => {
-    //     $button1A.css('display', 'block');
-    // }
-    // const openAnswer2 = () => {
-    //     $modal2.css('display', 'block');
-    // }
-    // const openAnswer3 = () => {
-    //     $modal3.css('display', 'block');
-    // }
-    // const openAnswer4 = () => {
-    //     $modal4.css('display', 'block');
-    // }
+    const openAnswer1 = () => {
+        $button1A.css('display', 'block');
+    }
+    const openAnswer2 = () => {
+        $button1B.css('display', 'block');
+    }
+    const openAnswer3 = () => {
+        $button1C.css('display', 'block');
+    }
+    const openAnswer4 = () => {
+        $button1D.css('display', 'block');
+    }
     // const openAnswer5 = () => {
     //     $modal5.css('display', 'block');
     // }
@@ -200,6 +200,8 @@ $(() => {
     const $openButton23 = $('#openQuestion23');
     const $openButton24 = $('#openQuestion24');
     const $openButton25 = $('#openQuestion25');
+    
+    // these are the "modals" set up for each question
     const $modal1 = $('#question1');
     const $modal2 = $('#question2');
     const $modal3 = $('#question3');
@@ -225,17 +227,18 @@ $(() => {
     const $modal23 = $('#question23');
     const $modal24 = $('#question24');
     const $modal25 = $('#question25');
-    // const $button1A = $('#A1');
-    // const $button1B = $('#B1');
-    // const $button1C = $('#C1');
-    // const $button1D = $('#D1');
+    
+    const $button1A = $('#A1Answer');
+    const $button1B = $('#B1Answer');
+    const $button1C = $('#C1Answer');
+    const $button1D = $('#D1Answer');
 
     // these are the event listeners for opening each modal
     $openButton1.on('click', openQuestion1);
-    // $button1A.on('click', openAnswer1);
-    // $button1B.on('click', openAnswer2);
-    // $button1C.on('click', openAnswer3);
-    // $button1D.on('click', openAnswer4);
+    $button1A.on('click', openAnswer1);
+    $button1B.on('click', openAnswer2);
+    $button1C.on('click', openAnswer3);
+    $button1D.on('click', openAnswer4);
     $openButton2.on('click', openQuestion2);
     $openButton3.on('click', openQuestion3);
     $openButton4.on('click', openQuestion4);

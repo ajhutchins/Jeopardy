@@ -52,10 +52,11 @@ h1 {
 
 #category1, #category2, #category3, #category4, #category5 {
     border: 2px solid black;
-    width: 100%;
+    width: 100px;
     height: 50px;
-    padding: 25px 25px 25px 25px;
-    align-content: center;
+    padding: 20px 20px 20px 20px;
+    justify-content: space-between;
+    text-align: center;
     border-radius: 3px;
 }
 
@@ -115,10 +116,10 @@ h1 {
 }
 
 
-#A1Answer, #B1Answer, #C1Answer, #D1Answer {
+#A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer {
     border: 1px solid black;
-    /* height: 200px;
-    width: 225px; */
+    height: 200px;
+    width: 225px;
     padding: 6px;
     z-index: 1;
     /* overflow: auto; */
@@ -126,10 +127,10 @@ h1 {
     cursor: pointer;
     left: 50%;
     top: 50%;
-    position: absolute;
+    /* position: absolute; */
 }
 
-#A1, #B1, #C1, #D1 {
+#A1, #B1, #C1, #D1, #A2, #B2 {
     cursor: pointer;
     background-color:rgb(74, 74, 189);
 	border: 1px solid gold;
