@@ -3,7 +3,11 @@
 body {
     background: blue;
     /* justify-content: center; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    position: absolute;
+    /* left: 50%;
+    top: 50%; */
+    /* transform: translate(-50%, -50%); */
     font-family:'Big Shoulders Display', Courier;
 }
 h1 {
@@ -11,12 +15,16 @@ h1 {
     color: white;
     text-shadow: 2px 2px 2px black;
     font-size: 40px;
+    border-radius: 3px;
+    padding: 25px 10px 0 10px;
 }
 
 .wholeGame {
     height: 100%;
     width: 100%;
+    /* position: absolute; */
     background-color: darkblue;
+    border-radius: 3px;
 }
 
 .categories {
@@ -27,20 +35,26 @@ h1 {
     justify-content: space-between;
     color: white;
     text-shadow: 2px 2px 2px black;
-    border: 1px solid black;
+    border: 1px solid gold;
     /* flex: space-between; */
     padding: 25px;
     /* margin: 0 auto; */
     font-size:30px;
+    border-radius: 3px;
 }
 
-/* #category1, #category2, #category3, #category4, #category5 {
+#category1, #category2, #category3, #category4, #category5 {
     border: 1px solid black;
-} */
+    width: 100%;
+    height: 50px;
+    padding: 25px 25px 25px 25px;
+    align-content: center;
+    border-radius: 3px;
+}
 
 #column1, #column2, #column3, #column4, #column5 {
     height: 400px;
-    width: 14%;
+    width: 100px;
     flex-basis: 30%;
     display: flex;
     align-items: center;
@@ -51,7 +65,9 @@ h1 {
     flex-direction: column;
     padding: 15px 20px 5px 20px;
     float: left;
-    flex-wrap: nowrap;
+    border-radius: 3px;
+    /* margin: 0 auto; */
+    /* flex-wrap: nowrap; */
     /* overflow: hidden; */
 }
 
@@ -89,17 +105,33 @@ h1 {
     line-height: 120%; */
     padding: 14px 18px;
 	background-color:darkblue;
-	border: none;
+	border: 1px solid gold;
 	outline: none;
 	border-radius: 3px;
-	color: white;
-	font-family: 'Arial';
+    color: white;
+    font-size: 24px;
     cursor: pointer;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+#openQuestion1, #openQuestion2, #openQuestion3, #openQuestion4, #openQuestion5, #openQuestion6, #openQuestion7, #openQuestion8, #openQuestion9, #openQuestion10, #openQuestion11, #openQuestion12, #openQuestion13, #openQuestion14, #openQuestion15, #openQuestion16, #openQuestion17, #openQuestion18, #openQuestion19, #openQuestion20, #openQuestion21, #openQuestion22, #openQuestion23, #openQuestion24, #openQuestion25 {
+	background-color:darkblue;
+	border: 1px solid gold;
+	outline: none;
+	border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    height: 70px;
+    width: 100px;
+}
+
 
 #A1Answer, #B1Answer, #C1Answer, #D1Answer {
     border: 1px solid black;
@@ -109,4 +141,18 @@ h1 {
     z-index: 1;
     /* overflow: auto; */
     display: none;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+#A1, #B1, #C1, #D1 {
+    cursor: pointer;
+    background-color:rgb(74, 74, 189);
+	border: 1px solid gold;
+	outline: none;
+	border-radius: 3px;
+    color: white;
+    font-size: 18px;
 }
