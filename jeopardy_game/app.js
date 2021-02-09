@@ -1,15 +1,14 @@
 console.log('hello world');
 
 /*
-- user sees grid of options (5 categories (across top), each with 5 Qs in vertical column)
-    -- use table to design?
+[ x ] user sees grid of options (5 categories (across top), each with 5 Qs in vertical column)
 
-- when user clicks on a Q, it toggles the card to the other side and reveals the Q & 4 options of answers for the user to see
-    -- try to make the Q card take up the screen so the user can read it
-    -- add a timer so the user doesn't have unlimited time to choose answer
-    -- if user clicks correct answer, display 'correct!'
-    -- if user clicks incorrect answer, display 'incorrect!'
-    -- make that card un-clickable now
+[ x ] when user clicks on a Q, it pops up in a modal to reveal the Q & 4 button options for the user to choose one
+    [ x ] add a timer so the user doesn't have unlimited time to choose answer
+        -- 15-seconds to choose an answer, but user currently doesn't see it
+    [ x ] if user clicks correct answer, display 'correct!' and add appropriate points to total
+    [ x ] if user clicks incorrect answer, display 'incorrect!'
+    [ x ] once clicked, make card un-clickable now
 
 - add a "final jeopardy" bar at the bottom
     -- add a timer to this so that the final jeopardy question automatically triggers after 5-minutes
@@ -20,13 +19,9 @@ console.log('hello world');
 
 $(() => {
 
-
+    // This variable sets the initial score at 0 so we can add and subtract from that
+    // scorekeeper code used is based on the following: https://github.com/PhuGazie/ScoreKeeper/blob/master/app.js
     var sum = 0;
-    
-    // function findScore() {
-    //     myScore = 
-    
-
 
     // these functions display each modal button when it is clicked, allows the answers to be clicked, and gives a time limit for how long each modal is open
 
@@ -42,6 +37,8 @@ $(() => {
                 $modal1.css('display', 'none');
               }
             setTimeout(closeAnswerA1, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B1').click(function() {
             $buttonB1.css('display', 'block');
@@ -49,6 +46,8 @@ $(() => {
                 $modal1.css('display', 'none');
               }
               setTimeout(closeAnswerB1, 3000);
+              sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C1').click(function() {
             $buttonC1.css('display', 'block');
@@ -65,6 +64,8 @@ $(() => {
                 $modal1.css('display', 'none');
               }
               setTimeout(closeAnswerD1, 3000);
+              sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion1 = () => {
             $modal1.css('display', 'none');
@@ -91,6 +92,8 @@ $(() => {
                 $modal2.css('display', 'none');
             }
             setTimeout(closeAnswerB2, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion2 = () => {
             $modal2.css('display', 'none');
@@ -116,6 +119,8 @@ $(() => {
                 $modal3.css('display', 'none');
             }
             setTimeout(closeAnswerB3, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C3').click(function() {
             $buttonC3.css('display', 'block');
@@ -123,6 +128,8 @@ $(() => {
                 $modal3.css('display', 'none');
             }
             setTimeout(closeAnswerC3, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D3').click(function() {
             $buttonD3.css('display', 'block');
@@ -130,6 +137,8 @@ $(() => {
                 $modal3.css('display', 'none');
             }
             setTimeout(closeAnswerD3, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion3 = () => {
             $modal3.css('display', 'none');
@@ -146,6 +155,8 @@ $(() => {
                 $modal4.css('display', 'none');
             }
             setTimeout(closeAnswerA4, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B4').click(function() {
             $buttonB4.css('display', 'block');
@@ -162,6 +173,8 @@ $(() => {
                 $modal4.css('display', 'none');
             }
             setTimeout(closeAnswerC4, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D4').click(function() {
             $buttonD4.css('display', 'block');
@@ -169,6 +182,8 @@ $(() => {
                 $modal4.css('display', 'none');
             }
             setTimeout(closeAnswerD4, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion4 = () => {
             $modal4.css('display', 'none');
@@ -185,6 +200,8 @@ $(() => {
                 $modal5.css('display', 'none');
             }
             setTimeout(closeAnswerA5, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B5').click(function() {
             $buttonB5.css('display', 'block');
@@ -192,6 +209,8 @@ $(() => {
                 $modal5.css('display', 'none');
             }
             setTimeout(closeAnswerB5, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C5').click(function() {
             $buttonC5.css('display', 'block');
@@ -199,6 +218,8 @@ $(() => {
                 $modal5.css('display', 'none');
             }
             setTimeout(closeAnswerC5, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D5').click(function() {
             $buttonD5.css('display', 'block');
@@ -233,6 +254,8 @@ $(() => {
                 $modal6.css('display', 'none');
             }
             setTimeout(closeAnswerB6, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C6').click(function() {
             $buttonC6.css('display', 'block');
@@ -240,6 +263,8 @@ $(() => {
                 $modal6.css('display', 'none');
             }
             setTimeout(closeAnswerC6, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D6').click(function() {
             $buttonD6.css('display', 'block');
@@ -247,6 +272,8 @@ $(() => {
                 $modal6.css('display', 'none');
             }
             setTimeout(closeAnswerD6, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion6 = () => {
             $modal6.css('display', 'none');
@@ -263,6 +290,8 @@ $(() => {
                 $modal7.css('display', 'none');
             }
             setTimeout(closeAnswerA7, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B7').click(function() {
             $buttonB7.css('display', 'block');
@@ -279,6 +308,8 @@ $(() => {
                 $modal7.css('display', 'none');
             }
             setTimeout(closeAnswerC7, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D7').click(function() {
             $buttonD7.css('display', 'block');
@@ -286,6 +317,8 @@ $(() => {
                 $modal7.css('display', 'none');
             }
             setTimeout(closeAnswerD7, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion7 = () => {
             $modal7.css('display', 'none');
@@ -302,6 +335,8 @@ $(() => {
                 $modal8.css('display', 'none');
             }
             setTimeout(closeAnswerA8, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B8').click(function() {
             $buttonB8.css('display', 'block');
@@ -309,6 +344,8 @@ $(() => {
                 $modal8.css('display', 'none');
             }
             setTimeout(closeAnswerB8, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C8').click(function() {
             $buttonC8.css('display', 'block');
@@ -325,6 +362,8 @@ $(() => {
                 $modal8.css('display', 'none');
             }
             setTimeout(closeAnswerD8, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion8 = () => {
             $modal8.css('display', 'none');
@@ -341,6 +380,8 @@ $(() => {
                 $modal9.css('display', 'none');
             }
             setTimeout(closeAnswerA9, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B9').click(function() {
             $buttonB9.css('display', 'block');
@@ -348,6 +389,8 @@ $(() => {
                 $modal9.css('display', 'none');
             }
             setTimeout(closeAnswerB9, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C9').click(function() {
             $buttonC9.css('display', 'block');
@@ -355,6 +398,8 @@ $(() => {
                 $modal9.css('display', 'none');
             }
             setTimeout(closeAnswerC9, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D9').click(function() {
             $buttonD9.css('display', 'block');
@@ -389,6 +434,8 @@ $(() => {
                 $modal10.css('display', 'none');
             }
             setTimeout(closeAnswerB10, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C10').click(function() {
             $buttonC10.css('display', 'block');
@@ -396,6 +443,8 @@ $(() => {
                 $modal10.css('display', 'none');
             }
             setTimeout(closeAnswerC10, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D10').click(function() {
             $buttonD10.css('display', 'block');
@@ -403,6 +452,8 @@ $(() => {
                 $modal10.css('display', 'none');
             }
             setTimeout(closeAnswerD10, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion10 = () => {
             $modal10.css('display', 'none');
@@ -428,6 +479,8 @@ $(() => {
                 $modal11.css('display', 'none');
             }
             setTimeout(closeAnswerB11, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C11').click(function() {
             $buttonC11.css('display', 'block');
@@ -435,6 +488,8 @@ $(() => {
                 $modal11.css('display', 'none');
             }
             setTimeout(closeAnswerC11, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D11').click(function() {
             $buttonD11.css('display', 'block');
@@ -442,6 +497,8 @@ $(() => {
                 $modal11.css('display', 'none');
             }
             setTimeout(closeAnswerD11, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion11 = () => {
             $modal11.css('display', 'none');
@@ -458,6 +515,8 @@ $(() => {
                 $modal12.css('display', 'none');
             }
             setTimeout(closeAnswerA12, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B12').click(function() {
             $buttonB12.css('display', 'block');
@@ -465,6 +524,8 @@ $(() => {
                 $modal12.css('display', 'none');
             }
             setTimeout(closeAnswerB12, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C12').click(function() {
             $buttonC12.css('display', 'block');
@@ -472,6 +533,8 @@ $(() => {
                 $modal12.css('display', 'none');
             }
             setTimeout(closeAnswerC12, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D12').click(function() {
             $buttonD12.css('display', 'block');
@@ -506,6 +569,8 @@ $(() => {
                 $modal13.css('display', 'none');
             }
             setTimeout(closeAnswerB13, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C13').click(function() {
             $buttonC13.css('display', 'block');
@@ -513,6 +578,8 @@ $(() => {
                 $modal13.css('display', 'none');
             }
             setTimeout(closeAnswerC13, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D13').click(function() {
             $buttonD13.css('display', 'block');
@@ -520,6 +587,8 @@ $(() => {
                 $modal13.css('display', 'none');
             }
             setTimeout(closeAnswerD13, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion13 = () => {
             $modal13.css('display', 'none');
@@ -536,6 +605,8 @@ $(() => {
                 $modal14.css('display', 'none');
             }
             setTimeout(closeAnswerA14, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B14').click(function() {
             $buttonB14.css('display', 'block');
@@ -543,6 +614,8 @@ $(() => {
                 $modal14.css('display', 'none');
             }
             setTimeout(closeAnswerB14, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C14').click(function() {
             $buttonC14.css('display', 'block');
@@ -550,6 +623,8 @@ $(() => {
                 $modal14.css('display', 'none');
             }
             setTimeout(closeAnswerC14, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D14').click(function() {
             $buttonD14.css('display', 'block');
@@ -575,6 +650,8 @@ $(() => {
                 $modal15.css('display', 'none');
             }
             setTimeout(closeAnswerA15, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B15').click(function() {
             $buttonB15.css('display', 'block');
@@ -582,6 +659,8 @@ $(() => {
                 $modal15.css('display', 'none');
             }
             setTimeout(closeAnswerB15, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C15').click(function() {
             $buttonC15.css('display', 'block');
@@ -589,6 +668,8 @@ $(() => {
                 $modal15.css('display', 'none');
             }
             setTimeout(closeAnswerC15, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D15').click(function() {
             $buttonD15.css('display', 'block');
@@ -614,6 +695,8 @@ $(() => {
                 $modal16.css('display', 'none');
             }
             setTimeout(closeAnswerA16, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B16').click(function() {
             $buttonB16.css('display', 'block');
@@ -621,6 +704,8 @@ $(() => {
                 $modal16.css('display', 'none');
             }
             setTimeout(closeAnswerB16, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C16').click(function() {
             $buttonC16.css('display', 'block');
@@ -628,6 +713,8 @@ $(() => {
                 $modal16.css('display', 'none');
             }
             setTimeout(closeAnswerC16, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D16').click(function() {
             $buttonD16.css('display', 'block');
@@ -653,6 +740,8 @@ $(() => {
                 $modal17.css('display', 'none');
             }
             setTimeout(closeAnswerA17, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B17').click(function() {
             $buttonB17.css('display', 'block');
@@ -660,6 +749,8 @@ $(() => {
                 $modal17.css('display', 'none');
             }
             setTimeout(closeAnswerB17, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C17').click(function() {
             $buttonC17.css('display', 'block');
@@ -676,6 +767,8 @@ $(() => {
                 $modal17.css('display', 'none');
             }
             setTimeout(closeAnswerD17, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion17 = () => {
             $modal17.css('display', 'none');
@@ -692,6 +785,8 @@ $(() => {
                 $modal18.css('display', 'none');
             }
             setTimeout(closeAnswerA18, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B18').click(function() {
             $buttonB18.css('display', 'block');
@@ -708,6 +803,8 @@ $(() => {
                 $modal18.css('display', 'none');
             }
             setTimeout(closeAnswerC18, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D18').click(function() {
             $buttonD18.css('display', 'block');
@@ -715,6 +812,8 @@ $(() => {
                 $modal18.css('display', 'none');
             }
             setTimeout(closeAnswerD18, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion18 = () => {
             $modal18.css('display', 'none');
@@ -740,6 +839,8 @@ $(() => {
                 $modal19.css('display', 'none');
             }
             setTimeout(closeAnswerB19, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C19').click(function() {
             $buttonC19.css('display', 'block');
@@ -747,6 +848,8 @@ $(() => {
                 $modal19.css('display', 'none');
             }
             setTimeout(closeAnswerC19, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D19').click(function() {
             $buttonD19.css('display', 'block');
@@ -754,6 +857,8 @@ $(() => {
                 $modal19.css('display', 'none');
             }
             setTimeout(closeAnswerD19, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion19 = () => {
             $modal19.css('display', 'none');
@@ -770,6 +875,8 @@ $(() => {
                 $modal20.css('display', 'none');
             }
             setTimeout(closeAnswerA20, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B20').click(function() {
             $buttonB20.css('display', 'block');
@@ -777,6 +884,8 @@ $(() => {
                 $modal20.css('display', 'none');
             }
             setTimeout(closeAnswerB20, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C20').click(function() {
             $buttonC20.css('display', 'block');
@@ -793,6 +902,8 @@ $(() => {
                 $modal20.css('display', 'none');
             }
             setTimeout(closeAnswerD20, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion20 = () => {
             $modal20.css('display', 'none');
@@ -809,6 +920,8 @@ $(() => {
                 $modal21.css('display', 'none');
             }
             setTimeout(closeAnswerA21, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B21').click(function() {
             $buttonB7.css('display', 'block');
@@ -816,6 +929,8 @@ $(() => {
                 $modal21.css('display', 'none');
             }
             setTimeout(closeAnswerB21, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C21').click(function() {
             $buttonC21.css('display', 'block');
@@ -823,6 +938,8 @@ $(() => {
                 $modal21.css('display', 'none');
             }
             setTimeout(closeAnswerC21, 3000);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D21').click(function() {
             $buttonD21.css('display', 'block');
@@ -848,6 +965,8 @@ $(() => {
                 $modal22.css('display', 'none');
             }
             setTimeout(closeAnswerA22, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B22').click(function() {
             $buttonB22.css('display', 'block');
@@ -855,6 +974,8 @@ $(() => {
                 $modal22.css('display', 'none');
             }
             setTimeout(closeAnswerB22, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C22').click(function() {
             $buttonC22.css('display', 'block');
@@ -871,6 +992,8 @@ $(() => {
                 $modal22.css('display', 'none');
             }
             setTimeout(closeAnswerD22, 3000);
+            sum = sum - 200;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion22 = () => {
             $modal22.css('display', 'none');
@@ -896,6 +1019,8 @@ $(() => {
                 $modal23.css('display', 'none');
             }
             setTimeout(closeAnswerB23, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C23').click(function() {
             $buttonC23.css('display', 'block');
@@ -903,6 +1028,8 @@ $(() => {
                 $modal23.css('display', 'none');
             }
             setTimeout(closeAnswerC23, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D23').click(function() {
             $buttonD23.css('display', 'block');
@@ -910,6 +1037,8 @@ $(() => {
                 $modal23.css('display', 'none');
             }
             setTimeout(closeAnswerD23, 3000);
+            sum = sum - 300;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion23 = () => {
             $modal23.css('display', 'none');
@@ -926,6 +1055,8 @@ $(() => {
                 $modal24.css('display', 'none');
             }
             setTimeout(closeAnswerA24, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B24').click(function() {
             $buttonB24.css('display', 'block');
@@ -933,6 +1064,8 @@ $(() => {
                 $modal24.css('display', 'none');
             }
             setTimeout(closeAnswerB24, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C24').click(function() {
             $buttonC24.css('display', 'block');
@@ -940,6 +1073,8 @@ $(() => {
                 $modal24.css('display', 'none');
             }
             setTimeout(closeAnswerC24, 3000);
+            sum = sum - 400;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#D24').click(function() {
             $buttonD24.css('display', 'block');
@@ -965,6 +1100,8 @@ $(() => {
                 $modal25.css('display', 'none');
             }
             setTimeout(closeAnswerA25, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B25').click(function() {
             $buttonB25.css('display', 'block');
@@ -972,6 +1109,8 @@ $(() => {
                 $modal25.css('display', 'none');
             }
             setTimeout(closeAnswerB25, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         $('#C25').click(function() {
             $buttonC25.css('display', 'block');
@@ -988,6 +1127,8 @@ $(() => {
                 $modal25.css('display', 'none');
             }
             setTimeout(closeAnswerD25, 3000);
+            sum = sum - 500;
+              $('#score').html("Your Score: " + sum + " Points");
         });
         const closeQuestion25 = () => {
             $modal25.css('display', 'none');
