@@ -115,7 +115,7 @@ h1 {
 }
 
 
-#A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer, #A3Answer, #B3Answer, #C3Answer, #D3Answer, #A4Answer, #B4Answer, #C4Answer, #D4Answer, #A5Answer, #B5Answer, #C5Answer, #D5Answer, #A6Answer, #B6Answer, #C6Answer, #D6Answer, #A7Answer, #B7Answer, #C7Answer, #D7Answer, #A8Answer, #B8Answer, #C8Answer, #D8Answer  {
+#A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer, #A3Answer, #B3Answer, #C3Answer, #D3Answer, #A4Answer, #B4Answer, #C4Answer, #D4Answer, #A5Answer, #B5Answer, #C5Answer, #D5Answer, #A6Answer, #B6Answer, #C6Answer, #D6Answer, #A7Answer, #B7Answer, #C7Answer, #D7Answer, #A8Answer, #B8Answer, #C8Answer, #D8Answer, #A9Answer, #B9Answer, #C9Answer, #D9Answer, #A10Answer, #B10Answer, #C10Answer, #D10Answer, #A11Answer, #B11Answer, #C11Answer, #D11Answer, #A12Answer, #B12Answer, #C12Answer, #D12Answer, #A13Answer, #B13Answer, #C13Answer, #D13Answer, #A14Answer, #B14Answer, #C14Answer, #D14Answer, #A15Answer, #B15Answer, #C15Answer, #D15Answer, #A16Answer, #B16Answer, #C16Answer, #D16Answer, #A17Answer, #B17Answer, #C17Answer, #D17Answer, #A18Answer, #B18Answer, #C18Answer, #D18Answer, #A19Answer, #B19Answer, #C19Answer, #D19Answer, #A20Answer, #B20Answer, #C20Answer, #D20Answer, #A21Answer, #B21Answer, #C21Answer, #D21Answer, #A22Answer, #B22Answer, #C22Answer, #D22Answer, #A23Answer, #B23Answer, #C23Answer, #D23Answer, #A24Answer, #B24Answer, #C24Answer, #D24Answer, #A25Answer, #B25Answer, #C25Answer, #D25Answer  {
     background-color:darkblue;
 	border: 1px solid gold;
 	outline: none;
@@ -137,7 +137,7 @@ h1 {
     text-align: center;
 }
 
-#A1, #B1, #C1, #D1, #A2, #B2, #A3, #B3, #C3, #D3, #A4, #B4, #C4, #D4, #A5, #B5, #C5, #D5, #A6, #B6, #C6, #D6, #A7, #B7, #C7, #D7 {
+#A1, #B1, #C1, #D1, #A2, #B2, #A3, #B3, #C3, #D3, #A4, #B4, #C4, #D4, #A5, #B5, #C5, #D5, #A6, #B6, #C6, #D6, #A7, #B7, #C7, #D7, #A8, #B8, #C8, #D8, #A9, #B9, #C9, #D9, #A10, #B10, #C10, #D10, #A11, #B11, #C11, #D11, #A12, #B12, #C12, #D12, #A13, #B13, #C13, #D13, #A14, #B14, #C14, #D14, #A15, #B15, #C15, #D15, #A16, #B16, #C16, #D16, #A17, #B17, #C17, #D17, #A18, #B18, #C18, #D18, #A19, #B19, #C19, #D19, #A20, #B20, #C20, #D20, #A21, #B21, #C21, #D21, #A22, #B22, #C22, #D22, #A23, #B23, #C23, #D23, #A24, #B24, #C24, #D24, #A25, #B25, #C25, #D25 {
     cursor: pointer;
     background-color:rgb(74, 74, 189);
 	border: 1px solid gold;
