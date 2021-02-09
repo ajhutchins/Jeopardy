@@ -25,6 +25,15 @@ h1 {
     border-radius: 3px;
 }
 
+#score {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 25px;
+    border-radius: 3px;
+    border: 1px solid gold;
+}
+
 .wholeGame {
     height: 100%;
     width: 100%;
@@ -127,13 +136,13 @@ h1 {
     width: 350px;
     padding: 6px;
     z-index: 2;
-    position: absolute;
+    align-content: center;
     /* overflow: auto; */
     display: none;
     /* cursor: pointer; */
     right: 1%;
     top: -15%;
-    /* position: absolute; */
+    position: absolute;
     text-align: center;
 }
 
