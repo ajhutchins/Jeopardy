@@ -20,41 +20,91 @@ console.log('hello world');
 
 $(() => {
 
-    // these functions display each modal button when it is clicked
+    // these functions display each modal button when it is clicked, allows the answers to be clicked, and gives a time limit for how long each modal is open
     const openQuestion1 = () => {
         $modal1.css('display', 'block');
-        // $(e.currentTarget).text('DONE').on('click', (e) => {
+        // .on('click', (e) => {
         //     $(e.currentTarget).hide();
         // });
-        $('#A1Answer').click(function() {
-            alert("Correct!");
+        $('#A1').click(function() {
+            $buttonA1.css('display', 'block');
+            const closeAnswerA1 = () => {
+                $modal1.css('display', 'none');
+              }
+            setTimeout(closeAnswerA1, 3000);
+        });
+        $('#B1').click(function() {
+            $buttonB1.css('display', 'block');
+            const closeAnswerB1 = () => {
+                $modal1.css('display', 'none');
+              }
+              setTimeout(closeAnswerB1, 3000);
+        });
+        $('#C1').click(function() {
+            $buttonC1.css('display', 'block');
+            const closeAnswerC1 = () => {
+                $modal1.css('display', 'none');
+              }
+              setTimeout(closeAnswerC1, 3000);
+        });
+        $('#D1').click(function() {
+            $buttonD1.css('display', 'block');
+            const closeAnswerD1 = () => {
+                $modal1.css('display', 'none');
+              }
+              setTimeout(closeAnswerD1, 3000);
         });
         const closeQuestion1 = () => {
             $modal1.css('display', 'none');
+            // $(currentTarget).toggleClass('.question1Fin');
           }
           setTimeout(closeQuestion1, 15000);
     }
+
     const openQuestion2 = () => {
         $modal2.css('display', 'block');
+        $('#A2').click(function() {
+            $buttonA2.css('display', 'block');
+            const closeAnswerA2 = () => {
+                $modal2.css('display', 'none');
+            }
+            setTimeout(closeAnswerA2, 3000);
+        });
+        $('#B2').click(function() {
+            $buttonB2.css('display', 'block');
+            const closeAnswerB2 = () => {
+                $modal2.css('display', 'none');
+            }
+            setTimeout(closeAnswerB2, 3000);
+        });
         const closeQuestion2 = () => {
-            $modal1.css('display', 'none');
+            $modal2.css('display', 'none');
           }
           setTimeout(closeQuestion2, 15000);
     }
+
     const openQuestion3 = () => {
         $modal3.css('display', 'block');
+        $('#A3').click(function() {
+            $buttonA1.css('display', 'block');
+        });
         const closeQuestion3 = () => {
             $modal1.css('display', 'none');
           }
           setTimeout(closeQuestion3, 15000);
     }
+
     const openQuestion4 = () => {
         $modal4.css('display', 'block');
+        $('#A4').click(function() {
+            $buttonA1.css('display', 'block');
+        });
         const closeQuestion4 = () => {
             $modal1.css('display', 'none');
           }
           setTimeout(closeQuestion4, 15000);
     }
+
     const openQuestion5 = () => {
         $modal5.css('display', 'block');
         const closeQuestion5 = () => {
@@ -280,31 +330,31 @@ $(() => {
     const $buttonD6 = $('#D6Answer');
 
     // these are the event listeners for opening each question modal
-    $openButton1.on('click', openQuestion1);
-    $openButton2.on('click', openQuestion2);
-    $openButton3.on('click', openQuestion3);
-    $openButton4.on('click', openQuestion4);
-    $openButton5.on('click', openQuestion5);
-    $openButton6.on('click', openQuestion6);
-    $openButton7.on('click', openQuestion7);
-    $openButton8.on('click', openQuestion8);
-    $openButton9.on('click', openQuestion9);
-    $openButton10.on('click', openQuestion10);
-    $openButton11.on('click', openQuestion11);
-    $openButton12.on('click', openQuestion12);
-    $openButton13.on('click', openQuestion13);
-    $openButton14.on('click', openQuestion14);
-    $openButton15.on('click', openQuestion15);
-    $openButton16.on('click', openQuestion16);
-    $openButton17.on('click', openQuestion17);
-    $openButton18.on('click', openQuestion18);
-    $openButton19.on('click', openQuestion19);
-    $openButton20.on('click', openQuestion20);
-    $openButton21.on('click', openQuestion21);
-    $openButton22.on('click', openQuestion22);
-    $openButton23.on('click', openQuestion23);
-    $openButton24.on('click', openQuestion24);
-    $openButton25.on('click', openQuestion25);
+    $openButton1.one('click', openQuestion1);
+    $openButton2.one('click', openQuestion2);
+    $openButton3.one('click', openQuestion3);
+    $openButton4.one('click', openQuestion4);
+    $openButton5.one('click', openQuestion5);
+    $openButton6.one('click', openQuestion6);
+    $openButton7.one('click', openQuestion7);
+    $openButton8.one('click', openQuestion8);
+    $openButton9.one('click', openQuestion9);
+    $openButton10.one('click', openQuestion10);
+    $openButton11.one('click', openQuestion11);
+    $openButton12.one('click', openQuestion12);
+    $openButton13.one('click', openQuestion13);
+    $openButton14.one('click', openQuestion14);
+    $openButton15.one('click', openQuestion15);
+    $openButton16.one('click', openQuestion16);
+    $openButton17.one('click', openQuestion17);
+    $openButton18.one('click', openQuestion18);
+    $openButton19.one('click', openQuestion19);
+    $openButton20.one('click', openQuestion20);
+    $openButton21.one('click', openQuestion21);
+    $openButton22.one('click', openQuestion22);
+    $openButton23.one('click', openQuestion23);
+    $openButton24.one('click', openQuestion24);
+    $openButton25.one('click', openQuestion25);
 
     // these are the event listeners for each answer button
     // $buttonA1.on('click', openAnswer1);
@@ -315,9 +365,8 @@ $(() => {
 
 
     // this will tell us exactly where we've clicked on the page
-    const $checkQuestions = $('.question').on('click', (event) => {
-        
-        // $(event.currentTarget).toggleClass('question-back');
+    const $crossOutQuestion1 = $('.question').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-back');
         
         // console.log('clicked a question');
         console.log(event);

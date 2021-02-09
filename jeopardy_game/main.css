@@ -121,19 +121,20 @@ h1 {
 	outline: none;
 	border-radius: 4px;
     color: white;
-    font-size: 18px;
+    font-size: 40px;
     border: 1px solid black;
-    height: 200px;
-    width: 225px;
+    height: 150px;
+    width: 350px;
     padding: 6px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     /* overflow: auto; */
-    /* display: none; */
+    display: none;
     /* cursor: pointer; */
-    left: 50%;
-    top: 50%;
+    right: 1%;
+    top: -15%;
     /* position: absolute; */
+    text-align: center;
 }
 
 #A1, #B1, #C1, #D1, #A2, #B2, #A3, #B3, #C3, #D3, #A4, #B4, #C4, #D4, #A5, #B5, #C5, #D5, #A6, #B6, #C6, #D6 {
