@@ -36,7 +36,7 @@ $(() => {
             const closeAnswerA1 = () => {
                 $modal1.css('display', 'none');
               }
-            setTimeout(closeAnswerA1, 3000);
+            setTimeout(closeAnswerA1, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -45,7 +45,7 @@ $(() => {
             const closeAnswerB1 = () => {
                 $modal1.css('display', 'none');
               }
-              setTimeout(closeAnswerB1, 3000);
+              setTimeout(closeAnswerB1, 1250);
               sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -54,7 +54,7 @@ $(() => {
             const closeAnswerC1 = () => {
                 $modal1.css('display', 'none');
               }
-              setTimeout(closeAnswerC1, 3000);
+              setTimeout(closeAnswerC1, 1250);
               sum = sum + 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -63,7 +63,7 @@ $(() => {
             const closeAnswerD1 = () => {
                 $modal1.css('display', 'none');
               }
-              setTimeout(closeAnswerD1, 3000);
+              setTimeout(closeAnswerD1, 1250);
               sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -82,7 +82,7 @@ $(() => {
             const closeAnswerA2 = () => {
                 $modal2.css('display', 'none');
             }
-            setTimeout(closeAnswerA2, 3000);
+            setTimeout(closeAnswerA2, 1250);
             sum = sum + 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -91,7 +91,7 @@ $(() => {
             const closeAnswerB2 = () => {
                 $modal2.css('display', 'none');
             }
-            setTimeout(closeAnswerB2, 3000);
+            setTimeout(closeAnswerB2, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -109,7 +109,7 @@ $(() => {
             const closeAnswerA3 = () => {
                 $modal3.css('display', 'none');
             }
-            setTimeout(closeAnswerA3, 3000);
+            setTimeout(closeAnswerA3, 1250);
             sum = sum + 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -118,7 +118,7 @@ $(() => {
             const closeAnswerB3 = () => {
                 $modal3.css('display', 'none');
             }
-            setTimeout(closeAnswerB3, 3000);
+            setTimeout(closeAnswerB3, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -127,7 +127,7 @@ $(() => {
             const closeAnswerC3 = () => {
                 $modal3.css('display', 'none');
             }
-            setTimeout(closeAnswerC3, 3000);
+            setTimeout(closeAnswerC3, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -136,7 +136,7 @@ $(() => {
             const closeAnswerD3 = () => {
                 $modal3.css('display', 'none');
             }
-            setTimeout(closeAnswerD3, 3000);
+            setTimeout(closeAnswerD3, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -154,7 +154,7 @@ $(() => {
             const closeAnswerA4 = () => {
                 $modal4.css('display', 'none');
             }
-            setTimeout(closeAnswerA4, 3000);
+            setTimeout(closeAnswerA4, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -163,7 +163,7 @@ $(() => {
             const closeAnswerB4 = () => {
                 $modal4.css('display', 'none');
             }
-            setTimeout(closeAnswerB4, 3000);
+            setTimeout(closeAnswerB4, 1250);
             sum = sum + 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -172,7 +172,7 @@ $(() => {
             const closeAnswerC4 = () => {
                 $modal4.css('display', 'none');
             }
-            setTimeout(closeAnswerC4, 3000);
+            setTimeout(closeAnswerC4, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -181,7 +181,7 @@ $(() => {
             const closeAnswerD4 = () => {
                 $modal4.css('display', 'none');
             }
-            setTimeout(closeAnswerD4, 3000);
+            setTimeout(closeAnswerD4, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -199,7 +199,7 @@ $(() => {
             const closeAnswerA5 = () => {
                 $modal5.css('display', 'none');
             }
-            setTimeout(closeAnswerA5, 3000);
+            setTimeout(closeAnswerA5, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -208,7 +208,7 @@ $(() => {
             const closeAnswerB5 = () => {
                 $modal5.css('display', 'none');
             }
-            setTimeout(closeAnswerB5, 3000);
+            setTimeout(closeAnswerB5, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -217,7 +217,7 @@ $(() => {
             const closeAnswerC5 = () => {
                 $modal5.css('display', 'none');
             }
-            setTimeout(closeAnswerC5, 3000);
+            setTimeout(closeAnswerC5, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -226,7 +226,7 @@ $(() => {
             const closeAnswerD5 = () => {
                 $modal5.css('display', 'none');
             }
-            setTimeout(closeAnswerD5, 3000);
+            setTimeout(closeAnswerD5, 1250);
             sum = sum + 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -244,7 +244,7 @@ $(() => {
             const closeAnswerA6 = () => {
                 $modal6.css('display', 'none');
             }
-            setTimeout(closeAnswerA6, 3000);
+            setTimeout(closeAnswerA6, 1250);
             sum = sum + 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -253,7 +253,7 @@ $(() => {
             const closeAnswerB6 = () => {
                 $modal6.css('display', 'none');
             }
-            setTimeout(closeAnswerB6, 3000);
+            setTimeout(closeAnswerB6, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -262,7 +262,7 @@ $(() => {
             const closeAnswerC6 = () => {
                 $modal6.css('display', 'none');
             }
-            setTimeout(closeAnswerC6, 3000);
+            setTimeout(closeAnswerC6, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -271,7 +271,7 @@ $(() => {
             const closeAnswerD6 = () => {
                 $modal6.css('display', 'none');
             }
-            setTimeout(closeAnswerD6, 3000);
+            setTimeout(closeAnswerD6, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -289,7 +289,7 @@ $(() => {
             const closeAnswerA7 = () => {
                 $modal7.css('display', 'none');
             }
-            setTimeout(closeAnswerA7, 3000);
+            setTimeout(closeAnswerA7, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -298,7 +298,7 @@ $(() => {
             const closeAnswerB7 = () => {
                 $modal7.css('display', 'none');
             }
-            setTimeout(closeAnswerB7, 3000);
+            setTimeout(closeAnswerB7, 1250);
             sum = sum + 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -307,7 +307,7 @@ $(() => {
             const closeAnswerC7 = () => {
                 $modal7.css('display', 'none');
             }
-            setTimeout(closeAnswerC7, 3000);
+            setTimeout(closeAnswerC7, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -316,7 +316,7 @@ $(() => {
             const closeAnswerD7 = () => {
                 $modal7.css('display', 'none');
             }
-            setTimeout(closeAnswerD7, 3000);
+            setTimeout(closeAnswerD7, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -334,7 +334,7 @@ $(() => {
             const closeAnswerA8 = () => {
                 $modal8.css('display', 'none');
             }
-            setTimeout(closeAnswerA8, 3000);
+            setTimeout(closeAnswerA8, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -343,7 +343,7 @@ $(() => {
             const closeAnswerB8 = () => {
                 $modal8.css('display', 'none');
             }
-            setTimeout(closeAnswerB8, 3000);
+            setTimeout(closeAnswerB8, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -352,7 +352,7 @@ $(() => {
             const closeAnswerC8 = () => {
                 $modal8.css('display', 'none');
             }
-            setTimeout(closeAnswerC8, 3000);
+            setTimeout(closeAnswerC8, 1250);
             sum = sum + 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -361,7 +361,7 @@ $(() => {
             const closeAnswerD8 = () => {
                 $modal8.css('display', 'none');
             }
-            setTimeout(closeAnswerD8, 3000);
+            setTimeout(closeAnswerD8, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -379,7 +379,7 @@ $(() => {
             const closeAnswerA9 = () => {
                 $modal9.css('display', 'none');
             }
-            setTimeout(closeAnswerA9, 3000);
+            setTimeout(closeAnswerA9, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -388,7 +388,7 @@ $(() => {
             const closeAnswerB9 = () => {
                 $modal9.css('display', 'none');
             }
-            setTimeout(closeAnswerB9, 3000);
+            setTimeout(closeAnswerB9, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -397,7 +397,7 @@ $(() => {
             const closeAnswerC9 = () => {
                 $modal9.css('display', 'none');
             }
-            setTimeout(closeAnswerC9, 3000);
+            setTimeout(closeAnswerC9, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -406,7 +406,7 @@ $(() => {
             const closeAnswerD9 = () => {
                 $modal9.css('display', 'none');
             }
-            setTimeout(closeAnswerD9, 3000);
+            setTimeout(closeAnswerD9, 1250);
             sum = sum + 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -424,7 +424,7 @@ $(() => {
             const closeAnswerA10 = () => {
                 $modal10.css('display', 'none');
             }
-            setTimeout(closeAnswerA10, 3000);
+            setTimeout(closeAnswerA10, 1250);
             sum = sum + 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -433,7 +433,7 @@ $(() => {
             const closeAnswerB10 = () => {
                 $modal10.css('display', 'none');
             }
-            setTimeout(closeAnswerB10, 3000);
+            setTimeout(closeAnswerB10, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -442,7 +442,7 @@ $(() => {
             const closeAnswerC10 = () => {
                 $modal10.css('display', 'none');
             }
-            setTimeout(closeAnswerC10, 3000);
+            setTimeout(closeAnswerC10, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -451,7 +451,7 @@ $(() => {
             const closeAnswerD10 = () => {
                 $modal10.css('display', 'none');
             }
-            setTimeout(closeAnswerD10, 3000);
+            setTimeout(closeAnswerD10, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -469,7 +469,7 @@ $(() => {
             const closeAnswerA11 = () => {
                 $modal11.css('display', 'none');
             }
-            setTimeout(closeAnswerA11, 3000);
+            setTimeout(closeAnswerA11, 1250);
             sum = sum + 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -478,7 +478,7 @@ $(() => {
             const closeAnswerB11 = () => {
                 $modal11.css('display', 'none');
             }
-            setTimeout(closeAnswerB11, 3000);
+            setTimeout(closeAnswerB11, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -487,7 +487,7 @@ $(() => {
             const closeAnswerC11 = () => {
                 $modal11.css('display', 'none');
             }
-            setTimeout(closeAnswerC11, 3000);
+            setTimeout(closeAnswerC11, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -496,7 +496,7 @@ $(() => {
             const closeAnswerD11 = () => {
                 $modal11.css('display', 'none');
             }
-            setTimeout(closeAnswerD11, 3000);
+            setTimeout(closeAnswerD11, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -514,7 +514,7 @@ $(() => {
             const closeAnswerA12 = () => {
                 $modal12.css('display', 'none');
             }
-            setTimeout(closeAnswerA12, 3000);
+            setTimeout(closeAnswerA12, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -523,7 +523,7 @@ $(() => {
             const closeAnswerB12 = () => {
                 $modal12.css('display', 'none');
             }
-            setTimeout(closeAnswerB12, 3000);
+            setTimeout(closeAnswerB12, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -532,7 +532,7 @@ $(() => {
             const closeAnswerC12 = () => {
                 $modal12.css('display', 'none');
             }
-            setTimeout(closeAnswerC12, 3000);
+            setTimeout(closeAnswerC12, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -541,7 +541,7 @@ $(() => {
             const closeAnswerD12 = () => {
                 $modal12.css('display', 'none');
             }
-            setTimeout(closeAnswerD12, 3000);
+            setTimeout(closeAnswerD12, 1250);
             sum = sum + 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -559,7 +559,7 @@ $(() => {
             const closeAnswerA13 = () => {
                 $modal13.css('display', 'none');
             }
-            setTimeout(closeAnswerA13, 3000);
+            setTimeout(closeAnswerA13, 1250);
             sum = sum + 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -568,7 +568,7 @@ $(() => {
             const closeAnswerB13 = () => {
                 $modal13.css('display', 'none');
             }
-            setTimeout(closeAnswerB13, 3000);
+            setTimeout(closeAnswerB13, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -577,7 +577,7 @@ $(() => {
             const closeAnswerC13 = () => {
                 $modal13.css('display', 'none');
             }
-            setTimeout(closeAnswerC13, 3000);
+            setTimeout(closeAnswerC13, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -586,7 +586,7 @@ $(() => {
             const closeAnswerD13 = () => {
                 $modal13.css('display', 'none');
             }
-            setTimeout(closeAnswerD13, 3000);
+            setTimeout(closeAnswerD13, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -604,7 +604,7 @@ $(() => {
             const closeAnswerA14 = () => {
                 $modal14.css('display', 'none');
             }
-            setTimeout(closeAnswerA14, 3000);
+            setTimeout(closeAnswerA14, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -613,7 +613,7 @@ $(() => {
             const closeAnswerB14 = () => {
                 $modal14.css('display', 'none');
             }
-            setTimeout(closeAnswerB14, 3000);
+            setTimeout(closeAnswerB14, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -622,7 +622,7 @@ $(() => {
             const closeAnswerC14 = () => {
                 $modal14.css('display', 'none');
             }
-            setTimeout(closeAnswerC14, 3000);
+            setTimeout(closeAnswerC14, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -631,7 +631,7 @@ $(() => {
             const closeAnswerD14 = () => {
                 $modal14.css('display', 'none');
             }
-            setTimeout(closeAnswerD14, 3000);
+            setTimeout(closeAnswerD14, 1250);
             sum = sum + 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -649,7 +649,7 @@ $(() => {
             const closeAnswerA15 = () => {
                 $modal15.css('display', 'none');
             }
-            setTimeout(closeAnswerA15, 3000);
+            setTimeout(closeAnswerA15, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -658,7 +658,7 @@ $(() => {
             const closeAnswerB15 = () => {
                 $modal15.css('display', 'none');
             }
-            setTimeout(closeAnswerB15, 3000);
+            setTimeout(closeAnswerB15, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -667,7 +667,7 @@ $(() => {
             const closeAnswerC15 = () => {
                 $modal15.css('display', 'none');
             }
-            setTimeout(closeAnswerC15, 3000);
+            setTimeout(closeAnswerC15, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -676,7 +676,7 @@ $(() => {
             const closeAnswerD15 = () => {
                 $modal15.css('display', 'none');
             }
-            setTimeout(closeAnswerD15, 3000);
+            setTimeout(closeAnswerD15, 1250);
             sum = sum + 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -694,7 +694,7 @@ $(() => {
             const closeAnswerA16 = () => {
                 $modal16.css('display', 'none');
             }
-            setTimeout(closeAnswerA16, 3000);
+            setTimeout(closeAnswerA16, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -703,7 +703,7 @@ $(() => {
             const closeAnswerB16 = () => {
                 $modal16.css('display', 'none');
             }
-            setTimeout(closeAnswerB16, 3000);
+            setTimeout(closeAnswerB16, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -712,7 +712,7 @@ $(() => {
             const closeAnswerC16 = () => {
                 $modal16.css('display', 'none');
             }
-            setTimeout(closeAnswerC16, 3000);
+            setTimeout(closeAnswerC16, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -721,7 +721,7 @@ $(() => {
             const closeAnswerD16 = () => {
                 $modal16.css('display', 'none');
             }
-            setTimeout(closeAnswerD16, 3000);
+            setTimeout(closeAnswerD16, 1250);
             sum = sum + 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -739,7 +739,7 @@ $(() => {
             const closeAnswerA17 = () => {
                 $modal17.css('display', 'none');
             }
-            setTimeout(closeAnswerA17, 3000);
+            setTimeout(closeAnswerA17, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -748,7 +748,7 @@ $(() => {
             const closeAnswerB17 = () => {
                 $modal17.css('display', 'none');
             }
-            setTimeout(closeAnswerB17, 3000);
+            setTimeout(closeAnswerB17, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -757,7 +757,7 @@ $(() => {
             const closeAnswerC17 = () => {
                 $modal17.css('display', 'none');
             }
-            setTimeout(closeAnswerC17, 3000);
+            setTimeout(closeAnswerC17, 1250);
             sum = sum + 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -766,7 +766,7 @@ $(() => {
             const closeAnswerD17 = () => {
                 $modal17.css('display', 'none');
             }
-            setTimeout(closeAnswerD17, 3000);
+            setTimeout(closeAnswerD17, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -784,7 +784,7 @@ $(() => {
             const closeAnswerA18 = () => {
                 $modal18.css('display', 'none');
             }
-            setTimeout(closeAnswerA18, 3000);
+            setTimeout(closeAnswerA18, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -793,7 +793,7 @@ $(() => {
             const closeAnswerB18 = () => {
                 $modal18.css('display', 'none');
             }
-            setTimeout(closeAnswerB18, 3000);
+            setTimeout(closeAnswerB18, 1250);
             sum = sum + 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -802,7 +802,7 @@ $(() => {
             const closeAnswerC18 = () => {
                 $modal18.css('display', 'none');
             }
-            setTimeout(closeAnswerC18, 3000);
+            setTimeout(closeAnswerC18, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -811,7 +811,7 @@ $(() => {
             const closeAnswerD18 = () => {
                 $modal18.css('display', 'none');
             }
-            setTimeout(closeAnswerD18, 3000);
+            setTimeout(closeAnswerD18, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -829,7 +829,7 @@ $(() => {
             const closeAnswerA19 = () => {
                 $modal19.css('display', 'none');
             }
-            setTimeout(closeAnswerA19, 3000);
+            setTimeout(closeAnswerA19, 1250);
             sum = sum + 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -838,7 +838,7 @@ $(() => {
             const closeAnswerB19 = () => {
                 $modal19.css('display', 'none');
             }
-            setTimeout(closeAnswerB19, 3000);
+            setTimeout(closeAnswerB19, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -847,7 +847,7 @@ $(() => {
             const closeAnswerC19 = () => {
                 $modal19.css('display', 'none');
             }
-            setTimeout(closeAnswerC19, 3000);
+            setTimeout(closeAnswerC19, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -856,7 +856,7 @@ $(() => {
             const closeAnswerD19 = () => {
                 $modal19.css('display', 'none');
             }
-            setTimeout(closeAnswerD19, 3000);
+            setTimeout(closeAnswerD19, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -874,7 +874,7 @@ $(() => {
             const closeAnswerA20 = () => {
                 $modal20.css('display', 'none');
             }
-            setTimeout(closeAnswerA20, 3000);
+            setTimeout(closeAnswerA20, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -883,7 +883,7 @@ $(() => {
             const closeAnswerB20 = () => {
                 $modal20.css('display', 'none');
             }
-            setTimeout(closeAnswerB20, 3000);
+            setTimeout(closeAnswerB20, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -892,7 +892,7 @@ $(() => {
             const closeAnswerC20 = () => {
                 $modal20.css('display', 'none');
             }
-            setTimeout(closeAnswerC20, 3000);
+            setTimeout(closeAnswerC20, 1250);
             sum = sum + 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -901,7 +901,7 @@ $(() => {
             const closeAnswerD20 = () => {
                 $modal20.css('display', 'none');
             }
-            setTimeout(closeAnswerD20, 3000);
+            setTimeout(closeAnswerD20, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -919,7 +919,7 @@ $(() => {
             const closeAnswerA21 = () => {
                 $modal21.css('display', 'none');
             }
-            setTimeout(closeAnswerA21, 3000);
+            setTimeout(closeAnswerA21, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -928,7 +928,7 @@ $(() => {
             const closeAnswerB21 = () => {
                 $modal21.css('display', 'none');
             }
-            setTimeout(closeAnswerB21, 3000);
+            setTimeout(closeAnswerB21, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -937,7 +937,7 @@ $(() => {
             const closeAnswerC21 = () => {
                 $modal21.css('display', 'none');
             }
-            setTimeout(closeAnswerC21, 3000);
+            setTimeout(closeAnswerC21, 1250);
             sum = sum - 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -946,7 +946,7 @@ $(() => {
             const closeAnswerD21 = () => {
                 $modal21.css('display', 'none');
             }
-            setTimeout(closeAnswerD21, 3000);
+            setTimeout(closeAnswerD21, 1250);
             sum = sum + 100;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -964,7 +964,7 @@ $(() => {
             const closeAnswerA22 = () => {
                 $modal22.css('display', 'none');
             }
-            setTimeout(closeAnswerA22, 3000);
+            setTimeout(closeAnswerA22, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -973,7 +973,7 @@ $(() => {
             const closeAnswerB22 = () => {
                 $modal22.css('display', 'none');
             }
-            setTimeout(closeAnswerB22, 3000);
+            setTimeout(closeAnswerB22, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -982,7 +982,7 @@ $(() => {
             const closeAnswerC22 = () => {
                 $modal22.css('display', 'none');
             }
-            setTimeout(closeAnswerC22, 3000);
+            setTimeout(closeAnswerC22, 1250);
             sum = sum + 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -991,7 +991,7 @@ $(() => {
             const closeAnswerD22 = () => {
                 $modal22.css('display', 'none');
             }
-            setTimeout(closeAnswerD22, 3000);
+            setTimeout(closeAnswerD22, 1250);
             sum = sum - 200;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1009,7 +1009,7 @@ $(() => {
             const closeAnswerA23 = () => {
                 $modal23.css('display', 'none');
             }
-            setTimeout(closeAnswerA23, 3000);
+            setTimeout(closeAnswerA23, 1250);
             sum = sum + 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1018,7 +1018,7 @@ $(() => {
             const closeAnswerB23 = () => {
                 $modal23.css('display', 'none');
             }
-            setTimeout(closeAnswerB23, 3000);
+            setTimeout(closeAnswerB23, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1027,7 +1027,7 @@ $(() => {
             const closeAnswerC23 = () => {
                 $modal23.css('display', 'none');
             }
-            setTimeout(closeAnswerC23, 3000);
+            setTimeout(closeAnswerC23, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1036,7 +1036,7 @@ $(() => {
             const closeAnswerD23 = () => {
                 $modal23.css('display', 'none');
             }
-            setTimeout(closeAnswerD23, 3000);
+            setTimeout(closeAnswerD23, 1250);
             sum = sum - 300;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1054,7 +1054,7 @@ $(() => {
             const closeAnswerA24 = () => {
                 $modal24.css('display', 'none');
             }
-            setTimeout(closeAnswerA24, 3000);
+            setTimeout(closeAnswerA24, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1063,7 +1063,7 @@ $(() => {
             const closeAnswerB24 = () => {
                 $modal24.css('display', 'none');
             }
-            setTimeout(closeAnswerB24, 3000);
+            setTimeout(closeAnswerB24, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1072,7 +1072,7 @@ $(() => {
             const closeAnswerC24 = () => {
                 $modal24.css('display', 'none');
             }
-            setTimeout(closeAnswerC24, 3000);
+            setTimeout(closeAnswerC24, 1250);
             sum = sum - 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1081,7 +1081,7 @@ $(() => {
             const closeAnswerD24 = () => {
                 $modal24.css('display', 'none');
             }
-            setTimeout(closeAnswerD24, 3000);
+            setTimeout(closeAnswerD24, 1250);
             sum = sum + 400;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1099,7 +1099,7 @@ $(() => {
             const closeAnswerA25 = () => {
                 $modal25.css('display', 'none');
             }
-            setTimeout(closeAnswerA25, 3000);
+            setTimeout(closeAnswerA25, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1108,7 +1108,7 @@ $(() => {
             const closeAnswerB25 = () => {
                 $modal25.css('display', 'none');
             }
-            setTimeout(closeAnswerB25, 3000);
+            setTimeout(closeAnswerB25, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1117,7 +1117,7 @@ $(() => {
             const closeAnswerC25 = () => {
                 $modal25.css('display', 'none');
             }
-            setTimeout(closeAnswerC25, 3000);
+            setTimeout(closeAnswerC25, 1250);
             sum = sum + 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
@@ -1126,7 +1126,7 @@ $(() => {
             const closeAnswerD25 = () => {
                 $modal25.css('display', 'none');
             }
-            setTimeout(closeAnswerD25, 3000);
+            setTimeout(closeAnswerD25, 1250);
             sum = sum - 500;
               $('#score').html("Your Score: " + sum + " Points");
         });
