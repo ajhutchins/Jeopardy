@@ -81,7 +81,6 @@ h1 {
 
 #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #question12, #question13, #question14, #question15, #question16, #question17, #question18, #question19, #question20, #question21, #question22, #question23, #question24, #question25 {
     border: 1px solid black;
-
     display: none;
 }
 
@@ -117,13 +116,20 @@ h1 {
 
 
 #A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer, #A3Answer, #B3Answer, #C3Answer, #D3Answer, #A4Answer, #B4Answer, #C4Answer, #D4Answer, #A5Answer, #B5Answer, #C5Answer, #D5Answer  {
+    background-color:darkblue;
+	border: 1px solid gold;
+	outline: none;
+	border-radius: 4px;
+    color: white;
+    font-size: 18px;
     border: 1px solid black;
     height: 200px;
     width: 225px;
     padding: 6px;
     z-index: 1;
+    position: absolute;
     /* overflow: auto; */
-    display: none;
+    /* display: none; */
     /* cursor: pointer; */
     left: 50%;
     top: 50%;

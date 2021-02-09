@@ -21,23 +21,46 @@ console.log('hello world');
 $(() => {
 
     // these functions display each modal button when it is clicked
-    const openQuestion1 = (e) => {
+    const openQuestion1 = () => {
         $modal1.css('display', 'block');
         // $(e.currentTarget).text('DONE').on('click', (e) => {
-        //     $(e.currentTarget).child().remove();
+        //     $(e.currentTarget).hide();
         // });
+        $('#A1Answer').click(function() {
+            alert("Correct!");
+        });
+        const closeQuestion1 = () => {
+            $modal1.css('display', 'none');
+          }
+          setTimeout(closeQuestion1, 15000);
     }
     const openQuestion2 = () => {
         $modal2.css('display', 'block');
+        const closeQuestion2 = () => {
+            $modal1.css('display', 'none');
+          }
+          setTimeout(closeQuestion2, 15000);
     }
     const openQuestion3 = () => {
         $modal3.css('display', 'block');
+        const closeQuestion3 = () => {
+            $modal1.css('display', 'none');
+          }
+          setTimeout(closeQuestion3, 15000);
     }
     const openQuestion4 = () => {
         $modal4.css('display', 'block');
+        const closeQuestion4 = () => {
+            $modal1.css('display', 'none');
+          }
+          setTimeout(closeQuestion4, 15000);
     }
     const openQuestion5 = () => {
         $modal5.css('display', 'block');
+        const closeQuestion5 = () => {
+            $modal1.css('display', 'none');
+          }
+          setTimeout(closeQuestion5, 15000);
     }
     const openQuestion6 = () => {
         $modal6.css('display', 'block');
@@ -284,10 +307,10 @@ $(() => {
     $openButton25.on('click', openQuestion25);
 
     // these are the event listeners for each answer button
-    $buttonA1.on('click', openAnswer1);
-    $buttonB1.on('click', openAnswer2);
-    $buttonC1.on('click', openAnswer3);
-    $buttonD1.on('click', openAnswer4);
+    // $buttonA1.on('click', openAnswer1);
+    // $buttonB1.on('click', openAnswer2);
+    // $buttonC1.on('click', openAnswer3);
+    // $buttonD1.on('click', openAnswer4);
 
 
 
