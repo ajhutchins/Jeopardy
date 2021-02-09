@@ -115,7 +115,7 @@ h1 {
 }
 
 
-#A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer, #A3Answer, #B3Answer, #C3Answer, #D3Answer, #A4Answer, #B4Answer, #C4Answer, #D4Answer, #A5Answer, #B5Answer, #C5Answer, #D5Answer  {
+#A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer, #A3Answer, #B3Answer, #C3Answer, #D3Answer, #A4Answer, #B4Answer, #C4Answer, #D4Answer, #A5Answer, #B5Answer, #C5Answer, #D5Answer, #A6Answer, #B6Answer, #C6Answer, #D6Answer, #A7Answer, #B7Answer, #C7Answer, #D7Answer, #A8Answer, #B8Answer, #C8Answer, #D8Answer  {
     background-color:darkblue;
 	border: 1px solid gold;
 	outline: none;
@@ -137,7 +137,7 @@ h1 {
     text-align: center;
 }
 
-#A1, #B1, #C1, #D1, #A2, #B2, #A3, #B3, #C3, #D3, #A4, #B4, #C4, #D4, #A5, #B5, #C5, #D5, #A6, #B6, #C6, #D6 {
+#A1, #B1, #C1, #D1, #A2, #B2, #A3, #B3, #C3, #D3, #A4, #B4, #C4, #D4, #A5, #B5, #C5, #D5, #A6, #B6, #C6, #D6, #A7, #B7, #C7, #D7 {
     cursor: pointer;
     background-color:rgb(74, 74, 189);
 	border: 1px solid gold;
