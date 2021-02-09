@@ -21,8 +21,11 @@ console.log('hello world');
 $(() => {
 
     // these functions display each modal button when it is clicked
-    const openQuestion1 = () => {
+    const openQuestion1 = (e) => {
         $modal1.css('display', 'block');
+        // $(e.currentTarget).text('DONE').on('click', (e) => {
+        //     $(e.currentTarget).child().remove();
+        // });
     }
     const openQuestion2 = () => {
         $modal2.css('display', 'block');
