@@ -1352,8 +1352,8 @@ $(() => {
 
 
     // this will tell us exactly where we've clicked on the page
-    const $crossOutQuestion1 = $('.question').on('click', (event) => {
-        $(event.currentTarget).toggleClass('question-back');
+    const $crossOutQuestion1 = $('#openQuestion1').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
         
         // console.log('clicked a question');
         console.log(event);
@@ -1362,5 +1362,6 @@ $(() => {
         
         //argument here - playHand(event); - from card toggle example
     })
+    $crossOutQuestion1
 
 })

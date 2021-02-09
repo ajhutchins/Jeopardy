@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 2px black;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 3px;
     border: 1px solid gold;
 }
@@ -126,12 +126,11 @@ h1 {
 
 #A1Answer, #B1Answer, #C1Answer, #D1Answer, #A2Answer, #B2Answer, #A3Answer, #B3Answer, #C3Answer, #D3Answer, #A4Answer, #B4Answer, #C4Answer, #D4Answer, #A5Answer, #B5Answer, #C5Answer, #D5Answer, #A6Answer, #B6Answer, #C6Answer, #D6Answer, #A7Answer, #B7Answer, #C7Answer, #D7Answer, #A8Answer, #B8Answer, #C8Answer, #D8Answer, #A9Answer, #B9Answer, #C9Answer, #D9Answer, #A10Answer, #B10Answer, #C10Answer, #D10Answer, #A11Answer, #B11Answer, #C11Answer, #D11Answer, #A12Answer, #B12Answer, #C12Answer, #D12Answer, #A13Answer, #B13Answer, #C13Answer, #D13Answer, #A14Answer, #B14Answer, #C14Answer, #D14Answer, #A15Answer, #B15Answer, #C15Answer, #D15Answer, #A16Answer, #B16Answer, #C16Answer, #D16Answer, #A17Answer, #B17Answer, #C17Answer, #D17Answer, #A18Answer, #B18Answer, #C18Answer, #D18Answer, #A19Answer, #B19Answer, #C19Answer, #D19Answer, #A20Answer, #B20Answer, #C20Answer, #D20Answer, #A21Answer, #B21Answer, #C21Answer, #D21Answer, #A22Answer, #B22Answer, #C22Answer, #D22Answer, #A23Answer, #B23Answer, #C23Answer, #D23Answer, #A24Answer, #B24Answer, #C24Answer, #D24Answer, #A25Answer, #B25Answer, #C25Answer, #D25Answer  {
     background-color:darkblue;
-	border: 1px solid gold;
-	outline: none;
+	border: 2px solid gold;
+	/* outline: none; */
 	border-radius: 4px;
     color: white;
     font-size: 40px;
-    border: 1px solid black;
     height: 150px;
     width: 350px;
     padding: 6px;
@@ -154,4 +153,19 @@ h1 {
 	border-radius: 3px;
     color: white;
     font-size: 18px;
+}
+
+.question-done {
+	background-color:darkblue;
+	border: 1px solid gold;
+	outline: none;
+	border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    height: 70px;
+    width: 100px;
+    opacity: 50%;
 }
