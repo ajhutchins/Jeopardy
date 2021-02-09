@@ -1457,6 +1457,8 @@ $(() => {
     $crossOutQuestion24
     $crossOutQuestion25
 
-    // if('#A1', '#B1', '#C1', '#D1', '#A2', '#B2', '#A3', '#B3', '#C3', '#D3', '#A4', '#B4', '#C4', '#D4', '#A5', '#B5', '#C5', '#D5', '#A6', '#B6', '#C6', '#D6', '#A7', '#B7', '#C7', '#D7', '#A8', '#B8', '#C8', '#D8', '#A9', '#B9', '#C9', '#D9', '#A10', '#B10', '#C10', '#D10', '#A11', '#B11', '#C11', '#D11', '#A12', '#B12', '#C12', '#D12', #A13, #B13, #C13, #D13, #A14, #B14, #C14, #D14, #A15, #B15, #C15, #D15, #A16, #B16, #C16, #D16, #A17, #B17, #C17, #D17, #A18, #B18, #C18, #D18, #A19, #B19, #C19, #D19, #A20, #B20, #C20, #D20, #A21, #B21, #C21, #D21, #A22, #B22, #C22, #D22, #A23, #B23, #C23, #D23, #A24, #B24, #C24, #D24, #A25, #B25, #C25, #D25')
+    if('#openQuestion1' && '#openQuestion2' && '#openQuestion3' && '#openQuestion4' && '#openQuestion5' && '#openQuestion6' && '#openQuestion7' && '#openQuestion8' && '#openQuestion9' && '#openQuestion10' && '#openQuestion11' && '#openQuestion12' && '#openQuestion13' && '#openQuestion14' && '#openQuestion15' && '#openQuestion16' && '#openQuestion17' && '#openQuestion18' && '#openQuestion19' && '#openQuestion20' && '#openQuestion21' && '#openQuestion22' && '#openQuestion23' && '#openQuestion24' && '#openQuestion25' === '.question-done'){
+        return ('Game Over! Your Final Score: ' + sum)
+    }
 
 })
