@@ -924,7 +924,7 @@ $(() => {
               $('#score').html("Your Score: " + sum + " Points");
         });
         $('#B21').click(function() {
-            $buttonB7.css('display', 'block');
+            $buttonB21.css('display', 'block');
             const closeAnswerB21 = () => {
                 $modal21.css('display', 'none');
             }
@@ -1355,13 +1355,108 @@ $(() => {
     const $crossOutQuestion1 = $('#openQuestion1').on('click', (event) => {
         $(event.currentTarget).toggleClass('question-done');
         
-        // console.log('clicked a question');
         console.log(event);
         console.log(event.currentTarget);
-        // $(".question").hide();
-        
-        //argument here - playHand(event); - from card toggle example
     })
+    const $crossOutQuestion2 = $('#openQuestion2').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion3 = $('#openQuestion3').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion4 = $('#openQuestion4').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion5 = $('#openQuestion5').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion6 = $('#openQuestion6').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion7 = $('#openQuestion7').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion8 = $('#openQuestion8').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion9 = $('#openQuestion9').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion10 = $('#openQuestion10').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion11 = $('#openQuestion11').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion12 = $('#openQuestion12').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion13 = $('#openQuestion13').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion14 = $('#openQuestion14').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion15 = $('#openQuestion15').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion16 = $('#openQuestion16').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion17 = $('#openQuestion17').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion18 = $('#openQuestion18').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion19 = $('#openQuestion19').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion20 = $('#openQuestion20').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion21 = $('#openQuestion21').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion22 = $('#openQuestion22').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion23 = $('#openQuestion23').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion24 = $('#openQuestion24').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion25 = $('#openQuestion25').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+
     $crossOutQuestion1
+    $crossOutQuestion2
+    $crossOutQuestion3
+    $crossOutQuestion4
+    $crossOutQuestion5
+    $crossOutQuestion6
+    $crossOutQuestion7
+    $crossOutQuestion8
+    $crossOutQuestion9
+    $crossOutQuestion10
+    $crossOutQuestion11
+    $crossOutQuestion12
+    $crossOutQuestion13
+    $crossOutQuestion14
+    $crossOutQuestion15
+    $crossOutQuestion16
+    $crossOutQuestion17
+    $crossOutQuestion18
+    $crossOutQuestion19
+    $crossOutQuestion20
+    $crossOutQuestion21
+    $crossOutQuestion22
+    $crossOutQuestion23
+    $crossOutQuestion24
+    $crossOutQuestion25
+
+    // if('#A1', '#B1', '#C1', '#D1', '#A2', '#B2', '#A3', '#B3', '#C3', '#D3', '#A4', '#B4', '#C4', '#D4', '#A5', '#B5', '#C5', '#D5', '#A6', '#B6', '#C6', '#D6', '#A7', '#B7', '#C7', '#D7', '#A8', '#B8', '#C8', '#D8', '#A9', '#B9', '#C9', '#D9', '#A10', '#B10', '#C10', '#D10', '#A11', '#B11', '#C11', '#D11', '#A12', '#B12', '#C12', '#D12', #A13, #B13, #C13, #D13, #A14, #B14, #C14, #D14, #A15, #B15, #C15, #D15, #A16, #B16, #C16, #D16, #A17, #B17, #C17, #D17, #A18, #B18, #C18, #D18, #A19, #B19, #C19, #D19, #A20, #B20, #C20, #D20, #A21, #B21, #C21, #D21, #A22, #B22, #C22, #D22, #A23, #B23, #C23, #D23, #A24, #B24, #C24, #D24, #A25, #B25, #C25, #D25')
 
 })
