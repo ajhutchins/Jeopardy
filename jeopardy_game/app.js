@@ -7,13 +7,12 @@ console.log('hello world');
     [ x ] add a timer so the user doesn't have unlimited time to choose answer
         -- 15-seconds to choose an answer, but user currently doesn't see it
     [ x ] if user clicks correct answer, display 'correct!' and add appropriate points to total
-    [ x ] if user clicks incorrect answer, display 'incorrect!'
+    [ x ] if user clicks incorrect answer, display 'incorrect!' and subtract appropriate points from total
     [ x ] once clicked, make card un-clickable now
 
-- add a "final jeopardy" bar at the bottom
-    -- add a timer to this so that the final jeopardy question automatically triggers after 5-minutes
-
-
+[ x ] give the game a timer so it ends after a certain time
+    [ x ] display the user's final score
+    [ x ] reload the page on a "Play again" button so they can play again
 
 */
 
@@ -25,9 +24,9 @@ $(() => {
     // var gameOver = ['.question-done'];
      
     // This set timeout function ends the game after 2 minutes with an alert, which displays your final score and refreshes the page when you click the button within the alert -- window reload function inspired by: https://stackoverflow.com/questions/12173800/refresh-current-page-after-set-timeout-function-call
-    setTimeout(function(){alert("Game over! Your Final Score is: " + sum)
+    setTimeout(function(){alert("Game over! Your Final Score is: " + sum + " Points! Hit 'OK' to play again!")
         window.location.reload();
-    }, 120000);
+    }, 150000);
 
 
     // This section will theoretically play the Jeopardy theme song - inspired by: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click -- but debating whether or not I actually want to use
