@@ -22,6 +22,17 @@ $(() => {
     // This variable sets the initial score at 0 so we can add and subtract from that
     // scorekeeper code used is based on the following: https://github.com/PhuGazie/ScoreKeeper/blob/master/app.js
     var sum = 0;
+    var gameOver = ['.question-done'];
+     
+    setTimeout(function(){alert("Game over! You Final Score: " + sum)}, 120000);
+
+    // var jeopardySound;
+    
+    // function beginSong(){
+    //     jeopardySound = new sound("https://youtu.be/IkdmOVejUlI");
+    // }
+    // beginSong()
+
 
     // these functions display each modal button when it is clicked, allows the answers to be clicked, and gives a time limit for how long each modal is open
 
@@ -1134,7 +1145,19 @@ $(() => {
             $modal25.css('display', 'none');
           }
           setTimeout(closeQuestion25, 15000);
+     
     }
+
+
+    // const giveFinalScore = () => {
+    //     $modal26.css('display', 'block')
+        // if('#score' >= 5500){
+        //     alert ('Game Over! You\'re a genius! Your Final Score is: ' + sum)
+        //   }else{
+        //     alert ('Game Over! Your Final Score is: ' + sum)
+        // }
+    // }
+    
 
     // if statement to end the game
     // if('#openQuestion1' === '.question-done'){
@@ -1221,6 +1244,8 @@ $(() => {
     const $modal23 = $('#question23');
     const $modal24 = $('#question24');
     const $modal25 = $('#question25');
+
+    const $modal26 = $('#endGame');
     
 
     // these are the event listeners for each answer for all questions\
