@@ -8,7 +8,7 @@ body {
     /* left: 50%;
     top: 50%; */
     /* transform: translate(-50%, -50%); */
-    font-family:'Big Shoulders Display', Courier;
+    font-family:'Big Shoulders Display', Arial;
 }
 
 #wrapper {
@@ -53,17 +53,17 @@ h1 {
     text-shadow: 2px 2px 2px black;
     border: 2px solid gold;
     /* flex: space-between; */
-    padding: 25px;
+    padding: 25px 5px;
     /* margin: 0 auto; */
     font-size:30px;
     border-radius: 3px;
 }
 
 #category1, #category2, #category3, #category4, #category5 {
-    border: 2px solid black;
+    border: 4px solid black;
     width: 100px;
     height: 50px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 22px 20px 22px;
     justify-content: space-between;
     text-align: center;
     border-radius: 3px;
@@ -168,4 +168,5 @@ h1 {
     height: 70px;
     width: 100px;
     opacity: 50%;
+    z-index: -1;
 }

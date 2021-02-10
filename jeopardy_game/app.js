@@ -1457,8 +1457,8 @@ $(() => {
     $crossOutQuestion24
     $crossOutQuestion25
 
-    if('#openQuestion1' && '#openQuestion2' && '#openQuestion3' && '#openQuestion4' && '#openQuestion5' && '#openQuestion6' && '#openQuestion7' && '#openQuestion8' && '#openQuestion9' && '#openQuestion10' && '#openQuestion11' && '#openQuestion12' && '#openQuestion13' && '#openQuestion14' && '#openQuestion15' && '#openQuestion16' && '#openQuestion17' && '#openQuestion18' && '#openQuestion19' && '#openQuestion20' && '#openQuestion21' && '#openQuestion22' && '#openQuestion23' && '#openQuestion24' && '#openQuestion25' === '.question-done'){
-        return ('Game Over! Your Final Score: ' + sum)
-    }
+    // if('#openQuestion1' && '#openQuestion2' && '#openQuestion3' && '#openQuestion4' && '#openQuestion5' && '#openQuestion6' && '#openQuestion7' && '#openQuestion8' && '#openQuestion9' && '#openQuestion10' && '#openQuestion11' && '#openQuestion12' && '#openQuestion13' && '#openQuestion14' && '#openQuestion15' && '#openQuestion16' && '#openQuestion17' && '#openQuestion18' && '#openQuestion19' && '#openQuestion20' && '#openQuestion21' && '#openQuestion22' && '#openQuestion23' && '#openQuestion24' && '#openQuestion25' === '.question-done'){
+    //     return ('Game Over! Your Final Score: ' + sum)
+    // }
 
 })
