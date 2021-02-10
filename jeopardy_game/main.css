@@ -177,5 +177,6 @@ h1 {
     cursor: pointer;
     left: 50%;
     top: 50%;
-    align-content: center;
+    align: center;
+    padding: 15px 20px 15px 20px;
 }
