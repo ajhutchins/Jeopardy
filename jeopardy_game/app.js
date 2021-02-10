@@ -24,8 +24,13 @@ $(() => {
     var sum = 0;
     // var gameOver = ['.question-done'];
      
-    setTimeout(function(){alert("Game over! Your Final Score is: " + sum)}, 180000);
+    // This set timeout function ends the game after 2 minutes with an alert, which displays your final score and refreshes the page when you click the button within the alert -- window reload function inspired by: https://stackoverflow.com/questions/12173800/refresh-current-page-after-set-timeout-function-call
+    setTimeout(function(){alert("Game over! Your Final Score is: " + sum)
+        window.location.reload();
+    }, 120000);
 
+
+    // This section will theoretically play the Jeopardy theme song - inspired by: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click -- but debating whether or not I actually want to use
     // var jeopardySound = new Audio('https://open.spotify.com/embed/track/7HiPgTQFj0L2XHrSC97F1W');
     // jeopardySound.play();
     
@@ -40,9 +45,6 @@ $(() => {
     // Question Box 1 and access to 4 answers
     const openQuestion1 = () => {
         $modal1.css('display', 'block');
-        // .on('click', (e) => {
-        //     $(e.currentTarget).hide();
-        // });
         $('#A1').click(function() {
             $buttonA1.css('display', 'block');
             const closeAnswerA1 = () => {
@@ -81,7 +83,6 @@ $(() => {
         });
         const closeQuestion1 = () => {
             $modal1.css('display', 'none');
-            // $(currentTarget).toggleClass('.question1Fin');
           }
           setTimeout(closeQuestion1, 15000);
     }
