@@ -22,7 +22,7 @@ $(() => {
     // This variable sets the initial score at 0 so we can add and subtract from that
     // scorekeeper code used is based on the following: https://github.com/PhuGazie/ScoreKeeper/blob/master/app.js
     var sum = 0;
-    var gameOver = ['.question-done'];
+    // var gameOver = ['.question-done'];
      
     setTimeout(function(){alert("Game over! Your Final Score is: " + sum)}, 180000);
 
