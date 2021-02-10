@@ -24,9 +24,10 @@ $(() => {
     var sum = 0;
     var gameOver = ['.question-done'];
      
-    setTimeout(function(){alert("Game over! You Final Score: " + sum)}, 120000);
+    setTimeout(function(){alert("Game over! Your Final Score is: " + sum)}, 180000);
 
-    // var jeopardySound;
+    // var jeopardySound = new Audio('https://open.spotify.com/embed/track/7HiPgTQFj0L2XHrSC97F1W');
+    // jeopardySound.play();
     
     // function beginSong(){
     //     jeopardySound = new sound("https://youtu.be/IkdmOVejUlI");

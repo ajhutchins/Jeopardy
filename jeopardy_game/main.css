@@ -170,3 +170,15 @@ h1 {
     opacity: 50%;
     z-index: -1;
 }
+
+.song {
+    background-color:darkblue;
+	border: 1px solid gold;
+	outline: none;
+	border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+}
