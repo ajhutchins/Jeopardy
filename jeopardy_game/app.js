@@ -1136,6 +1136,38 @@ $(() => {
           setTimeout(closeQuestion25, 15000);
     }
 
+    // if statement to end the game
+    // if('#openQuestion1' === '.question-done'){
+    //     if('#openQuestion2' === '.question-done'){
+    //         if('#openQuestion3' === '.question-done') {
+    //             if('#openQuestion4' === '.question-done'){
+    //                 if('#openQuestion5' === '.question-done'){
+    //                     if('#openQuestion6' === '.question-done'){
+    //                         if('#openQuestion7' === '.question-done'){
+    //                             if('#openQuestion8' === '.question-done'){
+    //                                 if('#openQuestion9' === '.question-done'){
+    //                                     if('#openQuestion10' === '.question-done'){
+    //                                         if('#openQuestion11' === '.question-done'){
+    //                                             if('#openQuestion12' === '.question-done'){
+    //                                                 alert ('Game Over! Your Final Score is: ' + sum)
+    //                                             }
+    //                                         }
+    //                                     }
+    //                                 }
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // } 
+    
+    
+    // if('#openQuestion1' === '.question-done' && '#openQuestion2' === '.question-done' && '#openQuestion3' === '.question-done' && '#openQuestion4' === '.question-done' && '#openQuestion5' === '.question-done' && '#openQuestion6' === '.question-done' && '#openQuestion7' === '.question-done' && '#openQuestion8' === '.question-done' && '#openQuestion9' === '.question-done' && '#openQuestion10' === '.question-done' && '#openQuestion11' === '.question-done' && '#openQuestion12' === '.question-done' && '#openQuestion13' === '.question-done' && '#openQuestion14' === '.question-done' && '#openQuestion15' === '.question-done' && '#openQuestion16' === '.question-done' && '#openQuestion17' === '.question-done' && '#openQuestion18' === '.question-done' && '#openQuestion19' === '.question-done' && '#openQuestion20' === '.question-done' && '#openQuestion21' === '.question-done' && '#openQuestion22' === '.question-done' && '#openQuestion23' === '.question-done' && '#openQuestion24' === '.question-done' && '#openQuestion25' === '.question-done'){
+    //     alert ('Game Over! Your Final Score is: ' + sum)
+    // }
+
     // these constants connect the modal buttons to the specific questions
     const $openButton1 = $('#openQuestion1');
     const $openButton2 = $('#openQuestion2');
@@ -1456,9 +1488,5 @@ $(() => {
     $crossOutQuestion23
     $crossOutQuestion24
     $crossOutQuestion25
-
-    // if('#openQuestion1' && '#openQuestion2' && '#openQuestion3' && '#openQuestion4' && '#openQuestion5' && '#openQuestion6' && '#openQuestion7' && '#openQuestion8' && '#openQuestion9' && '#openQuestion10' && '#openQuestion11' && '#openQuestion12' && '#openQuestion13' && '#openQuestion14' && '#openQuestion15' && '#openQuestion16' && '#openQuestion17' && '#openQuestion18' && '#openQuestion19' && '#openQuestion20' && '#openQuestion21' && '#openQuestion22' && '#openQuestion23' && '#openQuestion24' && '#openQuestion25' === '.question-done'){
-    //     return ('Game Over! Your Final Score: ' + sum)
-    // }
 
 })
