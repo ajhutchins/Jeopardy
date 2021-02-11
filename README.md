@@ -4,7 +4,7 @@ ajhutchins-app
 
 <h1>How to make A.J.'s Jeopardy Game</h1>
 
-Link: // Put Link Here After Making Live //
+Link: file:///Users/a.j.hutchins/Desktop/Code/ajhutchins.github.io/jeopardy_game/index.html
 
 ![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/Jeopardy_Screen_Shot.png)
 
