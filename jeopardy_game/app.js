@@ -23,7 +23,7 @@ $(() => {
     var sum = 0;
     // var gameOver = ['.question-done'];
      
-    // This set timeout function ends the game after 2 minutes with an alert, which displays your final score and refreshes the page when you click the button within the alert -- window reload function inspired by: https://stackoverflow.com/questions/12173800/refresh-current-page-after-set-timeout-function-call
+    // This set timeout function ends the game after 2.5 minutes with an alert, which displays your final score and refreshes the page when you click the button within the alert -- window reload function inspired by: https://stackoverflow.com/questions/12173800/refresh-current-page-after-set-timeout-function-call
     setTimeout(function(){alert("Game over! Your Final Score is: " + sum + " Points! Hit 'OK' to play again!")
         window.location.reload();
     }, 150000);
