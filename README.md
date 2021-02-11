@@ -59,14 +59,15 @@ Link: // Put Link Here After Making Live //
                         <div id="question5">
                         </div>
                     </div>
+		</div>
   ```
   
-  4. From here, we need to add a BUTTON above each question, so the user can click on a question box/button to pop-up the question's text-box. That means we will also need some option for the user to choose from. Let's add the buttons to access the question's textbox AND to create answer options for the user to choose.
+  4. From here, we need to add a BUTTON above each question, so the user can click on a question box/button to pop-up the question's text-box. We will also need some options for the user to choose from. Let's add the buttons to access the question's textbox AND to create answer options for the user to choose.
   
   ```
   <div class="columns">
                 <div id="column1">
-                    <button id="openQuestion1">100</button>
+                    <button id="openQuestion1">QUESTION 1 VALUE</button>
                         <div id="question1">
                             <div id="question-textbox1">
                                 TEXT HERE
@@ -385,7 +386,7 @@ const openQuestion1 = () => {
     }
 ```
 
-11. Cool! Just remember that this won't close our windows out automatically - we just have the function created TO close it. Add a ```setTimout()``` function to each so the user doesn't have unlimited time. This doesn't need to be your final timer right now, so don't get hung up. Just get the code added so it works when you want it to. 
+11. Cool! Just remember that this won't close our windows out automatically - we just have the function created TO close it. Add a ```setTimout()``` function to each so the user doesn't have unlimited time. This doesn't need to be your final time right now, so don't get hung up. Just get the code added so it works when you want it to. 
 
 12. Now our buttons should be connected to our modals, which just need event listeners to work. Let's add those (make 25):
 
