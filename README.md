@@ -537,4 +537,6 @@ const openQuestion1 = () => {
     }, 150000);
 ```
 
+![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/Screen%20Shot%202021-02-11%20at%2011.17.09%20AM.png)
+
 There you go! You should now have a fully functioning Jeopardy game. Add some fun questions and mix up the timers to make it easier or harder, depending on your audience. Have fun!
