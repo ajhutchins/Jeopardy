@@ -6,7 +6,7 @@ ajhutchins-app
 
 Link: // Put Link Here After Making Live //
 
-
+Jeopardy_Screen_Shot.png
 
 1. The first step is making our Jeopardy board. To mimic this game, begin with linking the stylesheet, .js file, and the jQuery CDN in the HTML as such. Then add the opening ```<div>```s and title for our game:
 
