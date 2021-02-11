@@ -6,7 +6,7 @@ ajhutchins-app
 
 Pla the Game Here: http://ajhutchins.github.io/jeopardy_game/
 
-![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/Jeopardy_Screen_Shot.png)
+![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/jeopardy_game/Jeopardy_Screen_Shot.png)
 
 1. The first step is making our Jeopardy board. To mimic this game, begin with linking the stylesheet, .js file, and the jQuery CDN in the HTML as such. Then add the opening ```<div>```s and title for our game:
 
@@ -347,7 +347,7 @@ h1 {
     const $buttonD5 = $('#D5Answer');
 ```
 
-![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/Screen%20Shot%202021-02-08%20at%205.11.17%20PM.png)
+![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/jeopardy_game/Screen%20Shot%202021-02-08%20at%205.11.17%20PM.png)
 
 9. Phewf! Quite a bit of constants, but this will keep our items operating independently from one another.
 
@@ -463,7 +463,7 @@ AFTER TOGGLE:
     z-index: -1;
 }
 ```
-![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/Screen%20Shot%202021-02-11%20at%2011.16.05%20AM.png)
+![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/jeopardy_game/Screen%20Shot%202021-02-11%20at%2011.16.05%20AM.png)
 
 16. Now that the user can tell which question they've clicked on, let's add a way for them to be able to keep their score. First, add a new ```<div>``` just below our ```<h1>```, then add a variable set to 0:
 
@@ -538,6 +538,6 @@ const openQuestion1 = () => {
     }, 150000);
 ```
 
-![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/Screen%20Shot%202021-02-11%20at%2011.17.09%20AM.png)
+![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/jeopardy_game/Screen%20Shot%202021-02-11%20at%2011.17.09%20AM.png)
 
 There you go! You should now have a fully functioning Jeopardy game. Add some fun questions and mix up the timers to make it easier or harder, depending on your audience. Have fun!
