@@ -7,6 +7,7 @@ ajhutchins-app
 Link: // Put Link Here After Making Live //
 
 
+
 1. The first step is making our Jeopardy board. To mimic this game, begin with linking the stylesheet, .js file, and the jQuery CDN in the HTML as such. Then add the opening ```<div>```s and title for our game:
 
 ```
@@ -396,3 +397,132 @@ const openQuestion1 = () => {
 ```
 
 13. Make sure to use ```.one``` instead of ```.on```, since we will need the user to be able to click again to choose their answer WITHIN the modal that we open. We should now be able to click on a question from whichever category, get that question to pop up in a modal, then choose from a set of option buttons within that modal. We should also have a subsequent modal telling us if we are correct or incorrect. Looks pretty close to what we want, huh?
+
+14. One thing that will make our game a whole lot better is indicating to the user which questions they've already answered. For this, let's write a function to toggle the class of each question box so that we can change the CSS in the new class to reflect that it has been clicked.
+
+```
+// this will toggle the class of the questions that have already been clicked
+    const $crossOutQuestion1 = $('#openQuestion1').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion2 = $('#openQuestion2').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion3 = $('#openQuestion3').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion4 = $('#openQuestion4').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    const $crossOutQuestion5 = $('#openQuestion5').on('click', (event) => {
+        $(event.currentTarget).toggleClass('question-done');
+    })
+    
+    $crossOutQuestion1
+    $crossOutQuestion2
+    $crossOutQuestion3
+    $crossOutQuestion4
+    $crossOutQuestion5
+```
+
+15. Now add some changes to our CSS so the classes look different once they have been toggled:
+
+```
+BEFORE TOGGLE:
+#openQuestion1, #openQuestion2, #openQuestion3, #openQuestion4, #openQuestion5, #openQuestion6, #openQuestion7, #openQuestion8, #openQuestion9, #openQuestion10, #openQuestion11, #openQuestion12, #openQuestion13, #openQuestion14, #openQuestion15, #openQuestion16, #openQuestion17, #openQuestion18, #openQuestion19, #openQuestion20, #openQuestion21, #openQuestion22, #openQuestion23, #openQuestion24, #openQuestion25 {
+	background-color:darkblue;
+	border: 1px solid gold;
+	outline: none;
+	border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    height: 70px;
+    width: 100px;
+}
+
+AFTER TOGGLE:
+.question-done {
+	background-color:darkblue;
+	border: 1px solid gold;
+	outline: none;
+	border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    height: 70px;
+    width: 100px;
+    opacity: 50%;
+    z-index: -1;
+}
+```
+
+16. Now that the user can tell which question they've clicked on, let's add a way for them to be able to keep their score. First, add a new ```<div>``` just below our ```<h1>```, then add a variable set to 0:
+
+HTML:
+```
+          <div id="score">
+              Your Score: 
+          </div>
+
+```
+JS
+```
+    // This variable sets the initial score at 0 so we can add and subtract from that
+    // scorekeeper code used is based on the following: https://github.com/PhuGazie/ScoreKeeper/blob/master/app.js
+    var sum = 0;
+```
+    
+17. Now let's incorporate our score into the buttons we've already created. After our ```setTimeout()``` functions in EACH question and answer button, add the positive or negative score that is appropriate. Make sure you then add the html to the new ```<div>``` so it displays nicely under your heading. Here's how question 1 should look now:
+
+```
+const openQuestion1 = () => {
+        $modal1.css('display', 'block');
+        $('#A1').click(function() {
+            $buttonA1.css('display', 'block');
+            const closeAnswerA1 = () => {
+                $modal1.css('display', 'none');
+              }
+            setTimeout(closeAnswerA1, 1250);
+            sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
+        });
+        $('#B1').click(function() {
+            $buttonB1.css('display', 'block');
+            const closeAnswerB1 = () => {
+                $modal1.css('display', 'none');
+              }
+              setTimeout(closeAnswerB1, 1250);
+              sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
+        });
+        $('#C1').click(function() {
+            $buttonC1.css('display', 'block');
+            const closeAnswerC1 = () => {
+                $modal1.css('display', 'none');
+              }
+              setTimeout(closeAnswerC1, 1250);
+              sum = sum + 100;
+              $('#score').html("Your Score: " + sum + " Points");
+        });
+        $('#D1').click(function() {
+            $buttonD1.css('display', 'block');
+            const closeAnswerD1 = () => {
+                $modal1.css('display', 'none');
+              }
+              setTimeout(closeAnswerD1, 1250);
+              sum = sum - 100;
+              $('#score').html("Your Score: " + sum + " Points");
+        });
+        const closeQuestion1 = () => {
+            $modal1.css('display', 'none');
+          }
+          setTimeout(closeQuestion1, 15000);
+    }
+```
+
+18. Nice! Now all we really need to do it END our game! Instead of reaching a point total, let's replicate real Jeopardy by implementing a timer to the whole board - make it so that the user will VERY rarely be able to complete all of the questions before the timer runs out. Once the timer runs out, we'll alert the user that the game is over, what their final score is, and the option to play again.
