@@ -526,3 +526,12 @@ const openQuestion1 = () => {
 ```
 
 18. Nice! Now all we really need to do it END our game! Instead of reaching a point total, let's replicate real Jeopardy by implementing a timer to the whole board - make it so that the user will VERY rarely be able to complete all of the questions before the timer runs out. Once the timer runs out, we'll alert the user that the game is over, what their final score is, and the option to play again.
+
+```
+    // This set timeout function ends the game after 2.5 minutes with an alert, which displays your final score and refreshes the page when you click the button within the alert -- window reload function inspired by: https://stackoverflow.com/questions/12173800/refresh-current-page-after-set-timeout-function-call
+    setTimeout(function(){alert("Game over! Your Final Score is: " + sum + " Points! Hit 'OK' to play again!")
+        window.location.reload();
+    }, 150000);
+```
+
+There you go! You should now have a fully functioning Jeopardy game. Add some fun questions and mix up the timers to make it easier or harder, depending on your audience. Have fun!
