@@ -346,6 +346,8 @@ h1 {
     const $buttonD5 = $('#D5Answer');
 ```
 
+![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/Screen%20Shot%202021-02-08%20at%205.11.17%20PM.png)
+
 9. Phewf! Quite a bit of constants, but this will keep our items operating independently from one another.
 
 10. Let's make these buttons do something! To open our question boxes, let's make some functions that connect everything. Since we're using modals, we just need to indicate which modal to display and on which event. And since we want the user to click on each box/option, let's use their click as the event to display our modal box. Once we have that function written, let's add another function WITHIN there to CLOSE the modal we have just opened. Set the same modal's display to none in the closing function:
