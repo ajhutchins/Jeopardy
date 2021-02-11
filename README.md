@@ -92,4 +92,307 @@ Link: // Put Link Here After Making Live //
                     </div>
   ```
   
-  5. Repeat this formula 5-times within the columns ```<div>``` to create 5 question boxes/buttons, along with 2-4 answer buttons within each. Get creative and write some fun questions and answers in.
+  5. Repeat this formula 5-times within the columns ```<div>``` to create 5 question boxes/buttons, along with 2-4 answer buttons within each. Get creative and write some fun questions and answers in. Make sure to add a number value as the button titles throughout the columns. After going through the motions, you should end up with a columns ```<div>``` that contains all 5-columns, and each column should contain 5 questions for the user to choose from, which then presents multiple option buttons within each chosen question. This is A LOT of HTML, but we now have a solid structure for our gameboard that we can add some fun functions to. You should have something similar to this (this is only column 1 for space-sake):
+  
+  ```
+<body>
+    <div id="wrapper">
+        <div class="wholeGame">
+            <h1>JEOPARDY!</h1>
+            <div class="categories">
+                <div id="category1">Film</div>
+                <div id="category2">Music</div>
+                <div id="category3">Art</div>
+                <div id="category4">Literature</div>
+                <div id="category5">Sports</div>
+        </div>
+            <div class="columns">
+                <div id="column1">
+                    <button id="openQuestion1">100</button>
+                        <div id="question1">
+                            <div id="question-textbox1">
+                                In <em>Back to the Future</em>, what year does Marty McFly go back to?
+                                <div id="question1answers">
+                                    <button id="A1">1940</button>
+                                        <div id="A1Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="B1">1945</button>
+                                        <div id="B1Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="C1">1955</button>
+                                        <div id="C1Answer">
+                                            Correct!
+                                        </div>
+                                    <button id="D1">1965</button>
+                                        <div id="D1Answer">
+                                            Incorrect!
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <button id="openQuestion2">200</button>
+                        <div id="question2">
+                            <div id="question-textbox2">
+                                In <em>The Matrix</em>, which pill does Neo take?
+                                <div id="question2answers">
+                                    <button id="A2">Red Pill</button>
+                                        <div id="A2Answer">
+                                            Correct!
+                                        </div>
+                                    <button id="B2">Blue Pill</button>
+                                        <div id="B2Answer">
+                                            Incorrect!
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <button id="openQuestion3">300</button>
+                        <div id="question3">
+                            <div id="question-textbox3">
+                                In <em>Stand By Me</em>, what are the boys searching for?
+                                <div id="question3answers">
+                                    <button id="A3">A Dead Body</button>
+                                        <div id="A3Answer">
+                                            Correct!
+                                        </div>
+                                    <button id="B3">Hidden Treasure</button>
+                                        <div id="B3Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="C3">Their Friend</button>
+                                        <div id="C3Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="D3">Nothing In Particular</button>
+                                        <div id="D3Answer">
+                                            Incorrect!
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <button id="openQuestion4">400</button>
+                        <div id="question4">
+                            <div id="question-textbox4">
+                                What year was <em>Forest Gump</em> released?
+                                <div id="question4answers">
+                                    <button id="A4">1992</button>
+                                        <div id="A4Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="B4">1994</button>
+                                        <div id="B4Answer">
+                                            Correct!
+                                        </div>
+                                    <button id="C4">1997</button>
+                                        <div id="C4Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="D4">1999</button>
+                                        <div id="D4Answer">
+                                            Incorrect!
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <button id="openQuestion5">500</button>
+                        <div id="question5">
+                            <div id="question-textbox5">
+                                In <em>Harry Potter</em>, what is the name of Voldemort's snake?
+                                <div id="question5answers">
+                                    <button id="A5">Runespoor</button>
+                                        <div id="A5Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="B5">Basilisk</button>
+                                        <div id="B5Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="C5">Ash</button>
+                                        <div id="C5Answer">
+                                            Incorrect!
+                                        </div>
+                                    <button id="D5">Nagini</button>
+                                        <div id="D5Answer">
+                                            Correct!
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+  ```
+  
+  6. We will want to start adding some functionailty to our gameboard, but our layout is a bit concerning at the moment. Let's hop over to CSS real quick to sort out some of the craziness. Feel free to experiment here with the colors, sizing, etc. that you would like to use. Just remember to ```display: flex;``` the categories and columns so they display next to one another vertically across the page. Otherwise, they will stack on top of one another horizontally. Here's an option you can use to match this formatting exactly:
+  
+  ```
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+    background: blue;
+    position: absolute;
+    font-family:'Big Shoulders Display', Arial;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:750px;
+}
+
+h1 {
+    background: blue;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 45px;
+    border-radius: 3px;
+}
+
+.wholeGame {
+    height: 100%;
+    width: 100%;
+    background-color: darkblue;
+    border-radius: 3px;
+    border: 2px solid gold;
+}
+
+.categories {
+    height: 50px;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: 2px solid gold;
+    padding: 25px 5px;
+    font-size:30px;
+    border-radius: 3px;
+}
+
+#category1, #category2, #category3, #category4, #category5 {
+    border: 4px solid black;
+    width: 100px;
+    height: 50px;
+    padding: 20px 22px 20px 22px;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#column1, #column2, #column3, #column4, #column5 {
+    height: 400px;
+    width: 106px;
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: 2px solid gold;
+    flex-direction: column;
+    padding: 15px 20px 5px 20px;
+    float: left;
+    border-radius: 3px;
+}
+  ```
+  
+7. Now that our gameboard looks a little bit more like an actual Jeopardy game, let's make our buttons work! Since we are using modals to display the question text-boxes, let's assign a few modal constants to connect with each question (you'll need to make 25 - one for each question):
+
+```
+// these constants connect the modal buttons to the specific questions
+    const $openButton1 = $('#openQuestion1');
+    const $openButton2 = $('#openQuestion2');
+    const $openButton3 = $('#openQuestion3');
+    const $openButton4 = $('#openQuestion4');
+    const $openButton5 = $('#openQuestion5');
+    
+// these are the modals set up for each question
+    const $modal1 = $('#question1');
+    const $modal2 = $('#question2');
+    const $modal3 = $('#question3');
+    const $modal4 = $('#question4');
+    const $modal5 = $('#question5');
+```
+
+8. Good! Up next is assigning our answer buttons with some modal constants. This way we can pop up another box to tell our user if they are "correct" or "incorrect" once they've chosen an answer(let's make sure to add that to our HTML & CSS as well):
+
+```
+// these are the event listeners for each answer for all questions\
+    // Q1
+    const $buttonA1 = $('#A1Answer');
+    const $buttonB1 = $('#B1Answer');
+    const $buttonC1 = $('#C1Answer');
+    const $buttonD1 = $('#D1Answer');
+    // Q2
+    const $buttonA2 = $('#A2Answer');
+    const $buttonB2 = $('#B2Answer');
+    // Q3
+    const $buttonA3 = $('#A3Answer');
+    const $buttonB3 = $('#B3Answer');
+    const $buttonC3 = $('#C3Answer');
+    const $buttonD3 = $('#D3Answer');
+    // Q4
+    const $buttonA4 = $('#A4Answer');
+    const $buttonB4 = $('#B4Answer');
+    const $buttonC4 = $('#C4Answer');
+    const $buttonD4 = $('#D4Answer');
+    // Q5
+    const $buttonA5 = $('#A5Answer');
+    const $buttonB5 = $('#B5Answer');
+    const $buttonC5 = $('#C5Answer');
+    const $buttonD5 = $('#D5Answer');
+```
+
+9. Phewf! Quite a bit of constants, but this will keep our items operating independently from one another.
+
+10. Let's make these buttons do something! To open our question boxes, let's make some functions that connect everything. Since we're using modals, we just need to indicate which modal to display and on which event. And since we want the user to click on each box/option, let's use their click as the event to display our modal box. Once we have that function written, let's add another function WITHIN there to CLOSE the modal we have just opened. Set the same modal's display to none in the closing function:
+
+```
+const openQuestion1 = () => {
+        $modal1.css('display', 'block');
+        $('#A1').click(function() {
+            $buttonA1.css('display', 'block');
+            const closeAnswerA1 = () => {
+                $modal1.css('display', 'none');
+              }
+        });
+        $('#B1').click(function() {
+            $buttonB1.css('display', 'block');
+            const closeAnswerB1 = () => {
+                $modal1.css('display', 'none');
+              }
+        });
+        $('#C1').click(function() {
+            $buttonC1.css('display', 'block');
+            const closeAnswerC1 = () => {
+                $modal1.css('display', 'none');
+              }
+        });
+        $('#D1').click(function() {
+            $buttonD1.css('display', 'block');
+            const closeAnswerD1 = () => {
+                $modal1.css('display', 'none');
+              }
+        });
+        const closeQuestion1 = () => {
+            $modal1.css('display', 'none');
+          }
+    }
+```
+
+11. Cool! Just remember that this won't close our windows out automatically - we just have the function created TO close it. Add a ```setTimout()``` function to each so the user doesn't have unlimited time. This doesn't need to be your final timer right now, so don't get hung up. Just get the code added so it works when you want it to. 
+
+12. Now our buttons should be connected to our modals, which just need event listeners to work. Let's add those (make 25):
+
+```
+    // these are the event listeners for opening each question modal
+    $openButton1.one('click', openQuestion1);
+    $openButton2.one('click', openQuestion2);
+    $openButton3.one('click', openQuestion3);
+    $openButton4.one('click', openQuestion4);
+    $openButton5.one('click', openQuestion5);
+```
+
+13. Make sure to use ```.one``` instead of ```.on```, since we will need the user to be able to click again to choose their answer WITHIN the modal that we open. We should now be able to click on a question from whichever category, get that question to pop up in a modal, then choose from a set of option buttons within that modal. We should also have a subsequent modal telling us if we are correct or incorrect. Looks pretty close to what we want, huh?
