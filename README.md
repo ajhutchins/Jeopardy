@@ -347,7 +347,7 @@ h1 {
     const $buttonD5 = $('#D5Answer');
 ```
 
-![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/jeopardy_game/Screen%20Shot%202021-02-08%20at%205.11.17%20PM.png)
+![alt text](./jeopardy_game/Screen%20Shot%202021-02-08%20at%205.11.17%20PM.png)
 
 9. Phewf! Quite a bit of constants, but this will keep our items operating independently from one another.
 
@@ -463,7 +463,7 @@ AFTER TOGGLE:
     z-index: -1;
 }
 ```
-![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/jeopardy_game/Screen%20Shot%202021-02-11%20at%2011.16.05%20AM.png)
+![alt text](./jeopardy_game/Screen%20Shot%202021-02-11%20at%2011.16.05%20AM.png)
 
 16. Now that the user can tell which question they've clicked on, let's add a way for them to be able to keep their score. First, add a new ```<div>``` just below our ```<h1>```, then add a variable set to 0:
 
@@ -538,7 +538,7 @@ const openQuestion1 = () => {
     }, 150000);
 ```
 
-![alt text](https://github.com/ajhutchins/ajhutchins.github.io/blob/main/jeopardy_game/Screen%20Shot%202021-02-11%20at%2011.17.09%20AM.png)
+![alt text](./jeopardy_game/Screen%20Shot%202021-02-11%20at%2011.17.09%20AM.png)
 
 There you go! You should now have a fully functioning Jeopardy game. Add some fun questions and mix up the timers to make it easier or harder, depending on your audience. Have fun!
 
